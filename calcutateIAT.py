@@ -58,3 +58,44 @@ search_string=os.path.join('..','data','*.csv')
 print "loading datafiles"
 
 files = glob.glob(search_string) #list of data files in the named location
+
+#the controls writing the results to a csvfile
+with open('IATscores.csv', 'w') as csvfile:
+    datwriter = csv.writer(csvfile, delimiter=',',
+                            quotechar='|', quoting=csv.QUOTE_MINIMAL)
+    #the first row of our output file is the headers
+    datwriter.writerow(['file','IAT score', 'raw uncorrected', 'congruent mean RT','congruent RT sd', 'congruent error prop','incongruent mean RT','incongruent RT sd', 'incongruent error prop'])     
+            
+    #now iterate through all data files and calculate the IAT    
+    for filename in files:
+    
+        #import into python using pandas
+        df = pd.read_csv(filename)
+        
+        ## -----------EXTRACT DATA
+        print "extracting data & calculating IAT"
+        
+        #extract the stuff we're interested in (n.b i am indexing using the column names defined in the csv)
+        #dropna() drops nans
+        #tolist() converts from series to list
+        corrs=df['key_resp.corr'].dropna().tolist()
+        rts=df['key_resp.rt'].dropna().tolist()
+        block_length=int(len(corrs)/2)
+        #find order 
+        order=df['order'].tolist()[0]
+        #1 congr then incong
+        #2 incongr then congr
+
+        if order==1:
+            congr_corr=corrs[0:block_length]
+            congr_rts=rts[0:block_length]
+            incon_corr=corrs[block_length:]
+            incon_rts=rts[block_length:]
+        else:
+            congr_corr=corrs[block_length:]
+            congr_rts=rts[block_length:]
+            incon_corr=corrs[0:block_length]
+            incon_rts=rts[0:block_length]
+                
+        
+        
