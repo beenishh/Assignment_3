@@ -943,3 +943,37 @@ _timeToFirstFrame = win.getFutureFlipTime(clock="now")
 end_thanksClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
 frameN = -1
 
+# -------Run Routine "end_thanks"-------
+while continueRoutine:
+    # get current time
+    t = end_thanksClock.getTime()
+    tThisFlip = win.getFutureFlipTime(clock=end_thanksClock)
+    tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+    # update/draw components on each frame
+    
+    # *thanks_text* updates
+    if thanks_text.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        thanks_text.frameNStart = frameN  # exact frame index
+        thanks_text.tStart = t  # local t and not account for scr refresh
+        thanks_text.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(thanks_text, 'tStartRefresh')  # time at next scr refresh
+        thanks_text.setAutoDraw(True)
+    
+    # check for quit (typically the Esc key)
+    if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+        core.quit()
+    
+    # check if all components have finished
+    if not continueRoutine:  # a component has requested a forced-end of Routine
+        break
+    continueRoutine = False  # will revert to True if at least one component still running
+    for thisComponent in end_thanksComponents:
+        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+            continueRoutine = True
+            break  # at least one component has not yet finished
+    
+    # refresh the screen
+    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+        win.flip()
