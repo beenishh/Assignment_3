@@ -153,3 +153,60 @@ ready_done_mouse = event.Mouse(win=win)
 x, y = [None, None]
 ready_done_mouse.mouseClock = core.Clock()
 ready_done = keyboard.Keyboard()
+
+# Initialize components for Routine "trial"
+trialClock = core.Clock()
+fixation = visual.TextStim(win=win, name='fixation',
+    text='+',
+    font='Arial',
+    units='height', pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=0.0);
+image_stim = visual.ImageStim(
+    win=win,
+    name='image_stim', units='height', 
+    image='sin', mask=None,
+    ori=0, pos=[0, 0], size=[0.5, 0.5],
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-1.0)
+text_stim = visual.TextStim(win=win, name='text_stim',
+    text='default text',
+    font='Arial',
+    units='height', pos=(0, 0), height=0.05, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-2.0);
+key_resp = keyboard.Keyboard()
+touch_resp = event.Mouse(win=win)
+x, y = [None, None]
+touch_resp.mouseClock = core.Clock()
+button_left = visual.Rect(
+    win=win, name='button_left',units='height', 
+    width=(0.4, 0.2)[0], height=(0.4, 0.2)[1],
+    ori=0, pos=(-0.4, -0.3),
+    lineWidth=1, lineColor='darkgreen', lineColorSpace='rgb',
+    fillColor='lightgreen', fillColorSpace='rgb',
+    opacity=1, depth=-6.0, interpolate=True)
+trial_label_left = visual.TextStim(win=win, name='trial_label_left',
+    text='default text',
+    font='Arial',
+    units='height', pos=[-0.4, -0.3], height=0.05, wrapWidth=None, ori=0, 
+    color='darkgreen', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-7.0);
+button_right = visual.Rect(
+    win=win, name='button_right',units='height', 
+    width=(0.4, 0.2)[0], height=(0.4, 0.2)[1],
+    ori=0, pos=(0.4, -0.3),
+    lineWidth=1, lineColor='darkgreen', lineColorSpace='rgb',
+    fillColor='lightgreen', fillColorSpace='rgb',
+    opacity=1, depth=-8.0, interpolate=True)
+trial_label_right = visual.TextStim(win=win, name='trial_label_right',
+    text='default text',
+    font='Arial',
+    units='height', pos=[0.4, -0.3], height=0.05, wrapWidth=None, ori=0, 
+    color='darkgreen', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-9.0);
