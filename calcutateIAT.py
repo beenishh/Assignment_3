@@ -39,3 +39,22 @@ def exclude_slows(RTs,corrs,slowRT_limit):
             new_cr.append(corrs[i])
     
     return (new_rt, new_cr)
+
+## -----------DEFINE PARAMETERS
+print "setting parameters"
+
+penalty=0.600 #penalty - in seconds - for incorrect responses
+slowRT_limit=10 #threshold at which slow RTs are discarded
+fastRT_limit=0.300 #threshold which defines responses which are "too fast"
+fast_prop_limit=0.1 # threshold proportion of "too fast" responses which defines exclusion of ppt
+
+#where we expect the data files to be
+search_string=os.path.join('..','data','*.csv') 
+#we use os.path.join because the slashes go different ways on different operating systems
+#ie path = '../IAT-1.1/data' #linux
+#   path = '..\IAT-1.1\data' #windows
+
+## -----------LOAD DATA
+print "loading datafiles"
+
+files = glob.glob(search_string) #list of data files in the named location
