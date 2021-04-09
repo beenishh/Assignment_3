@@ -790,3 +790,60 @@ for thisBlock in blocks:
             if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
                 win.flip()
   
+ # -------Ending Routine "trial"-------
+        for thisComponent in trialComponents:
+            if hasattr(thisComponent, "setAutoDraw"):
+                thisComponent.setAutoDraw(False)
+        trials.addData('fixation.started', fixation.tStartRefresh)
+        trials.addData('fixation.stopped', fixation.tStopRefresh)
+        trials.addData('image_stim.started', image_stim.tStartRefresh)
+        trials.addData('image_stim.stopped', image_stim.tStopRefresh)
+        trials.addData('text_stim.started', text_stim.tStartRefresh)
+        trials.addData('text_stim.stopped', text_stim.tStopRefresh)
+        # check responses
+        if key_resp.keys in ['', [], None]:  # No response was made
+            key_resp.keys = None
+            # was no response the correct answer?!
+            if str(CorrAns).lower() == 'none':
+               key_resp.corr = 1;  # correct non-response
+            else:
+               key_resp.corr = 0;  # failed to respond (incorrectly)
+        # store data for trials (TrialHandler)
+        trials.addData('key_resp.keys',key_resp.keys)
+        trials.addData('key_resp.corr', key_resp.corr)
+        if key_resp.keys != None:  # we had a response
+            trials.addData('key_resp.rt', key_resp.rt)
+        trials.addData('key_resp.started', key_resp.tStartRefresh)
+        trials.addData('key_resp.stopped', key_resp.tStopRefresh)
+        # store data for trials (TrialHandler)
+        if len(touch_resp.x): trials.addData('touch_resp.x', touch_resp.x[0])
+        if len(touch_resp.y): trials.addData('touch_resp.y', touch_resp.y[0])
+        if len(touch_resp.leftButton): trials.addData('touch_resp.leftButton', touch_resp.leftButton[0])
+        if len(touch_resp.midButton): trials.addData('touch_resp.midButton', touch_resp.midButton[0])
+        if len(touch_resp.rightButton): trials.addData('touch_resp.rightButton', touch_resp.rightButton[0])
+        if len(touch_resp.time): trials.addData('touch_resp.time', touch_resp.time[0])
+        if len(touch_resp.clicked_name): trials.addData('touch_resp.clicked_name', touch_resp.clicked_name[0])
+        trials.addData('touch_resp.started', touch_resp.tStart)
+        trials.addData('touch_resp.stopped', touch_resp.tStop)
+        # check if correct (either mouse or keyboard)
+        if key_resp.keys:
+            corr = key_resp.corr
+            rt = key_resp.rt
+        else:
+            rt = touch_resp.time[0]  # annoyingly mouse is a list of rts
+            if (('left' in touch_resp.clicked_name[0] and CorrAns=='a') or
+                ('right' in touch_resp.clicked_name[0] and CorrAns=='l')):
+                corr = 1
+            else:
+                corr = 0
+        
+        thisExp.addData('rt',  rt)
+        thisExp.addData('corr', corr)
+        trials.addData('button_left.started', button_left.tStartRefresh)
+        trials.addData('button_left.stopped', button_left.tStopRefresh)
+        trials.addData('button_right.started', button_right.tStartRefresh)
+        trials.addData('button_right.stopped', button_right.tStopRefresh)
+        # the Routine "trial" was not non-slip safe, so reset the non-slip timer
+        routineTimer.reset()
+        
+       
