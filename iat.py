@@ -278,3 +278,102 @@ for thisInstruct_page in instruct_pages:
     _timeToFirstFrame = win.getFutureFlipTime(clock="now")
     instructionsClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
     frameN = -1
+
+     # -------Run Routine "instructions"-------
+    while continueRoutine:
+        # get current time
+        t = instructionsClock.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=instructionsClock)
+        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        
+        # *instructs_text* updates
+        if instructs_text.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            instructs_text.frameNStart = frameN  # exact frame index
+            instructs_text.tStart = t  # local t and not account for scr refresh
+            instructs_text.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(instructs_text, 'tStartRefresh')  # time at next scr refresh
+            instructs_text.setAutoDraw(True)
+        
+        # *instruct_done* updates
+        waitOnFlip = False
+        if instruct_done.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            instruct_done.frameNStart = frameN  # exact frame index
+            instruct_done.tStart = t  # local t and not account for scr refresh
+            instruct_done.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(instruct_done, 'tStartRefresh')  # time at next scr refresh
+            instruct_done.status = STARTED
+            # keyboard checking is just starting
+            waitOnFlip = True
+            win.callOnFlip(instruct_done.clock.reset)  # t=0 on next screen flip
+            win.callOnFlip(instruct_done.clearEvents, eventType='keyboard')  # clear events on next screen flip
+        if instruct_done.status == STARTED and not waitOnFlip:
+            theseKeys = instruct_done.getKeys(keyList=['space'], waitRelease=False)
+            _instruct_done_allKeys.extend(theseKeys)
+            if len(_instruct_done_allKeys):
+                instruct_done.keys = _instruct_done_allKeys[-1].name  # just the last key pressed
+                instruct_done.rt = _instruct_done_allKeys[-1].rt
+                # a response ends the routine
+                continueRoutine = False
+        
+        # *instr_done_button* updates
+        if instr_done_button.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            instr_done_button.frameNStart = frameN  # exact frame index
+            instr_done_button.tStart = t  # local t and not account for scr refresh
+            instr_done_button.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(instr_done_button, 'tStartRefresh')  # time at next scr refresh
+            instr_done_button.setAutoDraw(True)
+        
+        # *instr_done_label* updates
+        if instr_done_label.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            instr_done_label.frameNStart = frameN  # exact frame index
+            instr_done_label.tStart = t  # local t and not account for scr refresh
+            instr_done_label.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(instr_done_label, 'tStartRefresh')  # time at next scr refresh
+            instr_done_label.setAutoDraw(True)
+        # *instr_done_touch* updates
+        if instr_done_touch.status == NOT_STARTED and t >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            instr_done_touch.frameNStart = frameN  # exact frame index
+            instr_done_touch.tStart = t  # local t and not account for scr refresh
+            instr_done_touch.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(instr_done_touch, 'tStartRefresh')  # time at next scr refresh
+            instr_done_touch.status = STARTED
+            instr_done_touch.mouseClock.reset()
+            prevButtonState = instr_done_touch.getPressed()  # if button is down already this ISN'T a new click
+        if instr_done_touch.status == STARTED:  # only update if started and not finished!
+            buttons = instr_done_touch.getPressed()
+            if buttons != prevButtonState:  # button state changed?
+                prevButtonState = buttons
+                if sum(buttons) > 0:  # state changed to a new click
+                    # check if the mouse was inside our 'clickable' objects
+                    gotValidClick = False
+                    for obj in [instr_done_button]:
+                        if obj.contains(instr_done_touch):
+                            gotValidClick = True
+                            instr_done_touch.clicked_name.append(obj.name)
+                    if gotValidClick:  # abort routine on response
+                        continueRoutine = False
+        
+        # check for quit (typically the Esc key)
+        if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+            core.quit()
+        
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in instructionsComponents:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
