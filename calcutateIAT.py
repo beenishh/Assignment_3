@@ -97,5 +97,39 @@ with open('IATscores.csv', 'w') as csvfile:
             incon_corr=corrs[0:block_length]
             incon_rts=rts[0:block_length]
                 
-        
-        
+        ## -----------ANALYSE / CALCULATE
+            
+        #1 discard subject if too many fast responses
+        if sum(np.array(congr_rts + incon_rts)<fastRT_limit)>len(congr_rts + incon_rts)*fast_prop_limit:
+            print "excluding subject for " + os.path.basename(filename) + " because too many fast responses"
+        else:
+            #2 Eliminate scores over 10,000 ms
+                 
+            congr_rts,congr_corr=exclude_slows(congr_rts,congr_corr,slowRT_limit)              
+            incon_rts,incon_corr=exclude_slows(incon_rts,incon_corr,slowRT_limit)
+            
+            #3 Calculate pooled std
+            #pooled_std=pooled.std(0) #n-1 std sample std
+            #(Use N not N-1 because this is the whole sample). 
+            #numpy.std is population std
+            pooled=congr_rts + incon_rts #all RTs from both blocks, correct and incorrect
+            pooled_std=np.std(pooled)
+            
+            #4 Calculated adjusted means, including the penalty
+            congr_adjmean=adjustedmean(congr_rts,congr_corr,penalty)
+            incon_adjmean=adjustedmean(incon_rts,incon_corr,penalty)
+            
+            #5 Calculate the IAT, so that pro-stereotype RTs are a -ve score
+            IAT=(congr_adjmean-incon_adjmean)/pooled_std
+            
+            simpleIAT=np.mean(congr_rts)-np.mean(incon_rts)        
+            
+            print "IAT for " + os.path.basename(filename) + " is : {:+.3f}".format(IAT)
+            print "Mean difference (uncorrected) is {:+.3f}".format(simpleIAT)+" seconds"
+            #datwriter.writerow(['IAT score', 'raw uncorrected', 'congruent mean RT,'congruent RT sd', 'congruent error prop','incongruent mean RT,'incongruent RT sd', 'incongruent error prop'])            
+            datwriter.writerow([os.path.basename(filename),"{:+.3f}".format(IAT), "{:+.3f}".format(simpleIAT), "{:+.3f}".format(np.mean(congr_rts)),"{:+.3f}".format(np.std(congr_rts)),"{:+.2f}".format(1-(sum(congr_corr)/len(congr_corr))),"{:+.3f}".format(np.mean(incon_rts)),"{:+.3f}".format(np.std(incon_rts)),"{:+.2f}".format(1-(sum(incon_corr)/len(incon_corr)))])            
+            # np.std(congr_rts)
+            # sum(congr_corr)/size(congr_corr)
+    
+ 
+       
