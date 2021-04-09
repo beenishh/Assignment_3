@@ -1,0 +1,1816 @@
+3.2297 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+58.8913 	WARNING 	User requested fullscreen with size [1920 1080], but screen is actually [1366, 768]. Using actual size
+63.5918 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color='black', colorSpace='named', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000019BB1E9DCF8>, gamma=None, gammaErrorPolicy='raise', kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x0000019BB1F7ECF8>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1366,  768]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+63.6039 	EXP 	window1: mouseVisible = True
+63.6041 	EXP 	window1: recordFrameIntervals = False
+63.7733 	EXP 	window1: recordFrameIntervals = True
+64.1405 	EXP 	window1: recordFrameIntervals = False
+65.5466 	EXP 	Created instructs_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='instructs_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+65.5627 	EXP 	Created instr_done_button = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-3.0, fillColor='lightgreen', fillColorSpace='named', fillRGB=array([144., 238., 144.]), interpolate=True, lineColor='darkgreen', lineColorSpace='named', lineRGB=array([  0., 100.,   0.]), lineWidth=1, name='instr_done_button', opacity=1.0, ori=array(0.), pos=array([ 0. , -0.4]), size=array([0.4, 0.1]), units='height', vertices=ndarray(...), win=Window(...))
+65.6155 	EXP 	Created instr_done_label = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='darkgreen', colorSpace='named', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='instr_done_label', opacity=1.0, ori=0, pos=array([ 0. , -0.4]), rgb=array([  0., 100.,   0.]), text='Next...', units='height', win=Window(...), wrapWidth=1)
+65.6158 	EXP 	window1: mouseVisible = True
+65.7111 	EXP 	Created main_ready_msg = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='main_ready_msg', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+65.7137 	EXP 	Created button_L = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-1.0, fillColor='lightgreen', fillColorSpace='named', fillRGB=array([144., 238., 144.]), interpolate=True, lineColor='darkgreen', lineColorSpace='named', lineRGB=array([  0., 100.,   0.]), lineWidth=1, name='button_L', opacity=1.0, ori=array(0.), pos=array([-0.4, -0.3]), size=array([0.4, 0.2]), units='height', vertices=ndarray(...), win=Window(...))
+65.7268 	EXP 	Created ready_label_L = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='darkgreen', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='ready_label_L', opacity=1.0, ori=0, pos=array([-0.4, -0.3]), rgb=array([  0., 100.,   0.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+65.7293 	EXP 	Created button_R = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-3.0, fillColor='lightgreen', fillColorSpace='named', fillRGB=array([144., 238., 144.]), interpolate=True, lineColor='darkgreen', lineColorSpace='named', lineRGB=array([  0., 100.,   0.]), lineWidth=1, name='button_R', opacity=1.0, ori=array(0.), pos=array([ 0.4, -0.3]), size=array([0.4, 0.2]), units='height', vertices=ndarray(...), win=Window(...))
+65.7360 	EXP 	Created ready_label_R = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='darkgreen', colorSpace='named', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='ready_label_R', opacity=1.0, ori=0, pos=array([ 0.4, -0.3]), rgb=array([  0., 100.,   0.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+65.7363 	EXP 	window1: mouseVisible = True
+65.7759 	EXP 	Created fixation = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='fixation', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='+', units='height', win=Window(...), wrapWidth=1)
+65.8746 	EXP 	Created image_stim = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image_stim', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.5, 0.5]), texRes=128, units='height', win=Window(...))
+65.9007 	EXP 	Created text_stim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_stim', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+65.9012 	EXP 	window1: mouseVisible = True
+65.9075 	EXP 	Created button_left = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-6.0, fillColor='lightgreen', fillColorSpace='named', fillRGB=array([144., 238., 144.]), interpolate=True, lineColor='darkgreen', lineColorSpace='named', lineRGB=array([  0., 100.,   0.]), lineWidth=1, name='button_left', opacity=1.0, ori=array(0.), pos=array([-0.4, -0.3]), size=array([0.4, 0.2]), units='height', vertices=ndarray(...), win=Window(...))
+65.9173 	EXP 	Created trial_label_left = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='darkgreen', colorSpace='named', contrast=1.0, depth=-7.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='trial_label_left', opacity=1.0, ori=0, pos=array([-0.4, -0.3]), rgb=array([  0., 100.,   0.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+65.9206 	EXP 	Created button_right = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-8.0, fillColor='lightgreen', fillColorSpace='named', fillRGB=array([144., 238., 144.]), interpolate=True, lineColor='darkgreen', lineColorSpace='named', lineRGB=array([  0., 100.,   0.]), lineWidth=1, name='button_right', opacity=1.0, ori=array(0.), pos=array([ 0.4, -0.3]), size=array([0.4, 0.2]), units='height', vertices=ndarray(...), win=Window(...))
+65.9295 	EXP 	Created trial_label_right = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='darkgreen', colorSpace='named', contrast=1.0, depth=-9.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='trial_label_right', opacity=1.0, ori=0, pos=array([ 0.4, -0.3]), rgb=array([  0., 100.,   0.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+65.9554 	EXP 	Created feedback_msg = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='feedback_msg', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+66.0085 	EXP 	Created thanks_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='thanks_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+66.5854 	EXP 	Imported instructs.xlsx as conditions, 2 conditions, 2 params
+66.5868 	EXP 	Created sequence: sequential, trialTypes=2, nReps=1, seed=None
+66.5884 	EXP 	New trial (rep=0, index=0): OrderedDict([('pageN', 1), ('instruct_text', "You will be presented with words to classify into categories using either the 'A' or 'L' key. \n \nTry to go as fast as possible while making as few mistakes as possible. \n")])
+66.8539 	EXP 	instructs_text: text = "You will be presented with words to classify into categories using either the 'A' or 'L' key. \n \nTry to go as fast as possible while making as few mistakes as possible. \n"
+66.8539 	EXP 	instructs_text: autoDraw = True
+66.8539 	EXP 	instr_done_button: autoDraw = True
+66.8539 	EXP 	instr_done_label: autoDraw = True
+86.2743 	DATA 	Mouse: Left button down, pos=(642,78)
+86.3572 	EXP 	New trial (rep=0, index=1): OrderedDict([('pageN', 2), ('instruct_text', 'Keep in mind: \n \n1) Labels at the top of the screen indicate which catogory goes with which key. \n \n2) Each word has a correct catogory classification. \n \n3) Keep your index fingers on the A and L keys to enable a rapid response. \n \n4) The test gives no results if you go slow- please try to go as fast as possible. \n')])
+86.4798 	DATA 	Mouse:  Left button up, pos=(642,78)
+86.5041 	EXP 	instructs_text: autoDraw = False
+86.5041 	EXP 	instr_done_button: autoDraw = False
+86.5041 	EXP 	instr_done_label: autoDraw = False
+86.5041 	EXP 	instructs_text: text = 'Keep in mind: \n \n1) Labels at the top of the screen indicate which catogory goes with which key. \n \n2) Each word has a correct catogory classification. \n \n3) Keep your index fingers on the A and L keys to enable a rapid response. \n \n4) The test gives no results if you go slow- please try to go as fast as possible. \n'
+86.5041 	EXP 	instructs_text: autoDraw = True
+86.5041 	EXP 	instr_done_button: autoDraw = True
+86.5041 	EXP 	instr_done_label: autoDraw = True
+98.9395 	DATA 	Mouse: Left button down, pos=(655,92)
+99.0421 	EXP 	Imported blocks_order1.xlsx as conditions, 5 conditions, 3 params
+99.0435 	EXP 	Created sequence: sequential, trialTypes=5, nReps=1, seed=None
+99.0450 	EXP 	New trial (rep=0, index=0): OrderedDict([('conds_file', 'pos_neg_train.xlsx'), ('label_left', 'A = \nHuman'), ('label_right', 'L = \nNon-human')])
+99.1177 	DATA 	Mouse:  Left button up, pos=(655,92)
+99.1531 	EXP 	instructs_text: autoDraw = False
+99.1531 	EXP 	instr_done_button: autoDraw = False
+99.1531 	EXP 	instr_done_label: autoDraw = False
+99.1531 	EXP 	ready_label_L: text = 'A = \nHuman'
+99.1531 	EXP 	ready_label_R: text = 'L = \nNon-human'
+99.1531 	EXP 	main_ready_msg: autoDraw = True
+99.1531 	EXP 	button_L: autoDraw = True
+99.1531 	EXP 	ready_label_L: autoDraw = True
+99.1531 	EXP 	button_R: autoDraw = True
+99.1531 	EXP 	ready_label_R: autoDraw = True
+106.6467 	DATA 	Keypress: space
+106.7666 	EXP 	Imported pos_neg_train.xlsx as conditions, 10 conditions, 3 params
+106.7960 	EXP 	Created sequence: random, trialTypes=10, nReps=1, seed=None
+106.7977 	EXP 	New trial (rep=0, index=0): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', 'Children'), ('CorrAns', 'a')])
+106.8855 	EXP 	main_ready_msg: autoDraw = False
+106.8855 	EXP 	button_L: autoDraw = False
+106.8855 	EXP 	ready_label_L: autoDraw = False
+106.8855 	EXP 	button_R: autoDraw = False
+106.8855 	EXP 	ready_label_R: autoDraw = False
+106.8855 	EXP 	image_stim: image = 'stimuli/blank.png'
+106.8855 	EXP 	text_stim: text = 'Children'
+106.8855 	EXP 	trial_label_left: text = 'A = \nHuman'
+106.8855 	EXP 	trial_label_right: text = 'L = \nNon-human'
+106.8855 	EXP 	fixation: autoDraw = True
+107.4693 	EXP 	fixation: autoDraw = False
+107.4693 	EXP 	image_stim: autoDraw = True
+107.4693 	EXP 	text_stim: autoDraw = True
+107.4693 	EXP 	button_left: autoDraw = True
+107.4693 	EXP 	trial_label_left: autoDraw = True
+107.4693 	EXP 	button_right: autoDraw = True
+107.4693 	EXP 	trial_label_right: autoDraw = True
+108.0725 	DATA 	Keypress: a
+108.1357 	EXP 	fixation: autoDraw = False
+108.1357 	EXP 	image_stim: autoDraw = False
+108.1357 	EXP 	text_stim: autoDraw = False
+108.1357 	EXP 	button_left: autoDraw = False
+108.1357 	EXP 	trial_label_left: autoDraw = False
+108.1357 	EXP 	button_right: autoDraw = False
+108.1357 	EXP 	trial_label_right: autoDraw = False
+108.1357 	EXP 	feedback_msg: text = ':)'
+108.1357 	EXP 	feedback_msg: autoDraw = True
+109.1048 	EXP 	New trial (rep=0, index=1): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', 'Rodent'), ('CorrAns', 'l')])
+109.1529 	EXP 	feedback_msg: autoDraw = False
+109.1529 	EXP 	image_stim: image = 'stimuli/blank.png'
+109.1529 	EXP 	text_stim: text = 'Rodent'
+109.1529 	EXP 	trial_label_left: text = 'A = \nHuman'
+109.1529 	EXP 	trial_label_right: text = 'L = \nNon-human'
+109.1529 	EXP 	fixation: autoDraw = True
+109.6527 	EXP 	fixation: autoDraw = False
+109.6527 	EXP 	image_stim: autoDraw = True
+109.6527 	EXP 	text_stim: autoDraw = True
+109.6527 	EXP 	button_left: autoDraw = True
+109.6527 	EXP 	trial_label_left: autoDraw = True
+109.6527 	EXP 	button_right: autoDraw = True
+109.6527 	EXP 	trial_label_right: autoDraw = True
+110.1336 	DATA 	Keypress: l
+110.1854 	EXP 	fixation: autoDraw = False
+110.1854 	EXP 	image_stim: autoDraw = False
+110.1854 	EXP 	text_stim: autoDraw = False
+110.1854 	EXP 	button_left: autoDraw = False
+110.1854 	EXP 	trial_label_left: autoDraw = False
+110.1854 	EXP 	button_right: autoDraw = False
+110.1854 	EXP 	trial_label_right: autoDraw = False
+110.1854 	EXP 	feedback_msg: text = ':)'
+110.1854 	EXP 	feedback_msg: autoDraw = True
+111.1713 	EXP 	New trial (rep=0, index=2): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', 'Rabbit'), ('CorrAns', 'l')])
+111.2190 	EXP 	feedback_msg: autoDraw = False
+111.2190 	EXP 	image_stim: image = 'stimuli/blank.png'
+111.2190 	EXP 	text_stim: text = 'Rabbit'
+111.2190 	EXP 	trial_label_left: text = 'A = \nHuman'
+111.2190 	EXP 	trial_label_right: text = 'L = \nNon-human'
+111.2190 	EXP 	fixation: autoDraw = True
+111.7028 	EXP 	fixation: autoDraw = False
+111.7028 	EXP 	image_stim: autoDraw = True
+111.7028 	EXP 	text_stim: autoDraw = True
+111.7028 	EXP 	button_left: autoDraw = True
+111.7028 	EXP 	trial_label_left: autoDraw = True
+111.7028 	EXP 	button_right: autoDraw = True
+111.7028 	EXP 	trial_label_right: autoDraw = True
+112.2170 	DATA 	Keypress: l
+112.2688 	EXP 	fixation: autoDraw = False
+112.2688 	EXP 	image_stim: autoDraw = False
+112.2688 	EXP 	text_stim: autoDraw = False
+112.2688 	EXP 	button_left: autoDraw = False
+112.2688 	EXP 	trial_label_left: autoDraw = False
+112.2688 	EXP 	button_right: autoDraw = False
+112.2688 	EXP 	trial_label_right: autoDraw = False
+112.2688 	EXP 	feedback_msg: text = ':)'
+112.2688 	EXP 	feedback_msg: autoDraw = True
+113.2540 	EXP 	New trial (rep=0, index=3): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', 'Fox'), ('CorrAns', 'l')])
+113.3022 	EXP 	feedback_msg: autoDraw = False
+113.3022 	EXP 	image_stim: image = 'stimuli/blank.png'
+113.3022 	EXP 	text_stim: text = 'Fox'
+113.3022 	EXP 	trial_label_left: text = 'A = \nHuman'
+113.3022 	EXP 	trial_label_right: text = 'L = \nNon-human'
+113.3022 	EXP 	fixation: autoDraw = True
+113.7859 	EXP 	fixation: autoDraw = False
+113.7859 	EXP 	image_stim: autoDraw = True
+113.7859 	EXP 	text_stim: autoDraw = True
+113.7859 	EXP 	button_left: autoDraw = True
+113.7859 	EXP 	trial_label_left: autoDraw = True
+113.7859 	EXP 	button_right: autoDraw = True
+113.7859 	EXP 	trial_label_right: autoDraw = True
+114.2893 	DATA 	Keypress: l
+114.3182 	EXP 	fixation: autoDraw = False
+114.3182 	EXP 	image_stim: autoDraw = False
+114.3182 	EXP 	text_stim: autoDraw = False
+114.3182 	EXP 	button_left: autoDraw = False
+114.3182 	EXP 	trial_label_left: autoDraw = False
+114.3182 	EXP 	button_right: autoDraw = False
+114.3182 	EXP 	trial_label_right: autoDraw = False
+114.3182 	EXP 	feedback_msg: text = ':)'
+114.3182 	EXP 	feedback_msg: autoDraw = True
+115.3202 	EXP 	New trial (rep=0, index=4): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', 'Cub'), ('CorrAns', 'l')])
+115.3519 	EXP 	feedback_msg: autoDraw = False
+115.3519 	EXP 	image_stim: image = 'stimuli/blank.png'
+115.3519 	EXP 	text_stim: text = 'Cub'
+115.3519 	EXP 	trial_label_left: text = 'A = \nHuman'
+115.3519 	EXP 	trial_label_right: text = 'L = \nNon-human'
+115.3519 	EXP 	fixation: autoDraw = True
+115.8517 	EXP 	fixation: autoDraw = False
+115.8517 	EXP 	image_stim: autoDraw = True
+115.8517 	EXP 	text_stim: autoDraw = True
+115.8517 	EXP 	button_left: autoDraw = True
+115.8517 	EXP 	trial_label_left: autoDraw = True
+115.8517 	EXP 	button_right: autoDraw = True
+115.8517 	EXP 	trial_label_right: autoDraw = True
+116.3221 	DATA 	Keypress: l
+116.3517 	EXP 	fixation: autoDraw = False
+116.3517 	EXP 	image_stim: autoDraw = False
+116.3517 	EXP 	text_stim: autoDraw = False
+116.3517 	EXP 	button_left: autoDraw = False
+116.3517 	EXP 	trial_label_left: autoDraw = False
+116.3517 	EXP 	button_right: autoDraw = False
+116.3517 	EXP 	trial_label_right: autoDraw = False
+116.3517 	EXP 	feedback_msg: text = ':)'
+116.3517 	EXP 	feedback_msg: autoDraw = True
+117.3372 	EXP 	New trial (rep=0, index=5): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', 'Cattle'), ('CorrAns', 'l')])
+117.3682 	EXP 	feedback_msg: autoDraw = False
+117.3682 	EXP 	image_stim: image = 'stimuli/blank.png'
+117.3682 	EXP 	text_stim: text = 'Cattle'
+117.3682 	EXP 	trial_label_left: text = 'A = \nHuman'
+117.3682 	EXP 	trial_label_right: text = 'L = \nNon-human'
+117.3682 	EXP 	fixation: autoDraw = True
+117.8679 	EXP 	fixation: autoDraw = False
+117.8679 	EXP 	image_stim: autoDraw = True
+117.8679 	EXP 	text_stim: autoDraw = True
+117.8679 	EXP 	button_left: autoDraw = True
+117.8679 	EXP 	trial_label_left: autoDraw = True
+117.8679 	EXP 	button_right: autoDraw = True
+117.8679 	EXP 	trial_label_right: autoDraw = True
+118.2827 	DATA 	Keypress: l
+118.3347 	EXP 	fixation: autoDraw = False
+118.3347 	EXP 	image_stim: autoDraw = False
+118.3347 	EXP 	text_stim: autoDraw = False
+118.3347 	EXP 	button_left: autoDraw = False
+118.3347 	EXP 	trial_label_left: autoDraw = False
+118.3347 	EXP 	button_right: autoDraw = False
+118.3347 	EXP 	trial_label_right: autoDraw = False
+118.3347 	EXP 	feedback_msg: text = ':)'
+118.3347 	EXP 	feedback_msg: autoDraw = True
+119.3207 	EXP 	New trial (rep=0, index=6): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', 'Woman'), ('CorrAns', 'a')])
+119.3680 	EXP 	feedback_msg: autoDraw = False
+119.3680 	EXP 	image_stim: image = 'stimuli/blank.png'
+119.3680 	EXP 	text_stim: text = 'Woman'
+119.3680 	EXP 	trial_label_left: text = 'A = \nHuman'
+119.3680 	EXP 	trial_label_right: text = 'L = \nNon-human'
+119.3680 	EXP 	fixation: autoDraw = True
+119.8517 	EXP 	fixation: autoDraw = False
+119.8517 	EXP 	image_stim: autoDraw = True
+119.8517 	EXP 	text_stim: autoDraw = True
+119.8517 	EXP 	button_left: autoDraw = True
+119.8517 	EXP 	trial_label_left: autoDraw = True
+119.8517 	EXP 	button_right: autoDraw = True
+119.8517 	EXP 	trial_label_right: autoDraw = True
+120.3218 	DATA 	Keypress: l
+120.4351 	EXP 	fixation: autoDraw = False
+120.4351 	EXP 	image_stim: autoDraw = False
+120.4351 	EXP 	text_stim: autoDraw = False
+120.4351 	EXP 	button_left: autoDraw = False
+120.4351 	EXP 	trial_label_left: autoDraw = False
+120.4351 	EXP 	button_right: autoDraw = False
+120.4351 	EXP 	trial_label_right: autoDraw = False
+120.4351 	EXP 	feedback_msg: text = 'Oops'
+120.4351 	EXP 	feedback_msg: autoDraw = True
+121.3358 	EXP 	New trial (rep=0, index=7): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', 'Wife'), ('CorrAns', 'a')])
+121.3682 	EXP 	feedback_msg: autoDraw = False
+121.3682 	EXP 	image_stim: image = 'stimuli/blank.png'
+121.3682 	EXP 	text_stim: text = 'Wife'
+121.3682 	EXP 	trial_label_left: text = 'A = \nHuman'
+121.3682 	EXP 	trial_label_right: text = 'L = \nNon-human'
+121.3682 	EXP 	fixation: autoDraw = True
+121.8845 	EXP 	fixation: autoDraw = False
+121.8845 	EXP 	image_stim: autoDraw = True
+121.8845 	EXP 	text_stim: autoDraw = True
+121.8845 	EXP 	button_left: autoDraw = True
+121.8845 	EXP 	trial_label_left: autoDraw = True
+121.8845 	EXP 	button_right: autoDraw = True
+121.8845 	EXP 	trial_label_right: autoDraw = True
+122.4314 	DATA 	Keypress: a
+122.5014 	EXP 	fixation: autoDraw = False
+122.5014 	EXP 	image_stim: autoDraw = False
+122.5014 	EXP 	text_stim: autoDraw = False
+122.5014 	EXP 	button_left: autoDraw = False
+122.5014 	EXP 	trial_label_left: autoDraw = False
+122.5014 	EXP 	button_right: autoDraw = False
+122.5014 	EXP 	trial_label_right: autoDraw = False
+122.5014 	EXP 	feedback_msg: text = ':)'
+122.5014 	EXP 	feedback_msg: autoDraw = True
+123.4693 	EXP 	New trial (rep=0, index=8): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', 'Man'), ('CorrAns', 'a')])
+123.5175 	EXP 	feedback_msg: autoDraw = False
+123.5175 	EXP 	image_stim: image = 'stimuli/blank.png'
+123.5175 	EXP 	text_stim: text = 'Man'
+123.5175 	EXP 	trial_label_left: text = 'A = \nHuman'
+123.5175 	EXP 	trial_label_right: text = 'L = \nNon-human'
+123.5175 	EXP 	fixation: autoDraw = True
+124.0012 	EXP 	fixation: autoDraw = False
+124.0012 	EXP 	image_stim: autoDraw = True
+124.0012 	EXP 	text_stim: autoDraw = True
+124.0012 	EXP 	button_left: autoDraw = True
+124.0012 	EXP 	trial_label_left: autoDraw = True
+124.0012 	EXP 	button_right: autoDraw = True
+124.0012 	EXP 	trial_label_right: autoDraw = True
+124.3481 	DATA 	Keypress: a
+124.4014 	EXP 	fixation: autoDraw = False
+124.4014 	EXP 	image_stim: autoDraw = False
+124.4014 	EXP 	text_stim: autoDraw = False
+124.4014 	EXP 	button_left: autoDraw = False
+124.4014 	EXP 	trial_label_left: autoDraw = False
+124.4014 	EXP 	button_right: autoDraw = False
+124.4014 	EXP 	trial_label_right: autoDraw = False
+124.4014 	EXP 	feedback_msg: text = ':)'
+124.4014 	EXP 	feedback_msg: autoDraw = True
+125.3862 	EXP 	New trial (rep=0, index=9): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', 'Citizen'), ('CorrAns', 'a')])
+125.4340 	EXP 	feedback_msg: autoDraw = False
+125.4340 	EXP 	image_stim: image = 'stimuli/blank.png'
+125.4340 	EXP 	text_stim: text = 'Citizen'
+125.4340 	EXP 	trial_label_left: text = 'A = \nHuman'
+125.4340 	EXP 	trial_label_right: text = 'L = \nNon-human'
+125.4340 	EXP 	fixation: autoDraw = True
+125.9342 	EXP 	fixation: autoDraw = False
+125.9342 	EXP 	image_stim: autoDraw = True
+125.9342 	EXP 	text_stim: autoDraw = True
+125.9342 	EXP 	button_left: autoDraw = True
+125.9342 	EXP 	trial_label_left: autoDraw = True
+125.9342 	EXP 	button_right: autoDraw = True
+125.9342 	EXP 	trial_label_right: autoDraw = True
+126.3711 	DATA 	Keypress: a
+126.4012 	EXP 	fixation: autoDraw = False
+126.4012 	EXP 	image_stim: autoDraw = False
+126.4012 	EXP 	text_stim: autoDraw = False
+126.4012 	EXP 	button_left: autoDraw = False
+126.4012 	EXP 	trial_label_left: autoDraw = False
+126.4012 	EXP 	button_right: autoDraw = False
+126.4012 	EXP 	trial_label_right: autoDraw = False
+126.4012 	EXP 	feedback_msg: text = ':)'
+126.4012 	EXP 	feedback_msg: autoDraw = True
+127.3867 	EXP 	New trial (rep=0, index=1): OrderedDict([('conds_file', 'cong_train.xlsx'), ('label_left', 'A = \nUpper Caste'), ('label_right', 'L = \nLower Caste')])
+127.4673 	EXP 	feedback_msg: autoDraw = False
+127.4673 	EXP 	ready_label_L: text = 'A = \nUpper Caste'
+127.4673 	EXP 	ready_label_R: text = 'L = \nLower Caste'
+127.4673 	EXP 	main_ready_msg: autoDraw = True
+127.4673 	EXP 	button_L: autoDraw = True
+127.4673 	EXP 	ready_label_L: autoDraw = True
+127.4673 	EXP 	button_R: autoDraw = True
+127.4673 	EXP 	ready_label_R: autoDraw = True
+130.1154 	DATA 	Keypress: space
+130.2338 	EXP 	Imported cong_train.xlsx as conditions, 10 conditions, 3 params
+130.2348 	EXP 	Created sequence: random, trialTypes=10, nReps=1, seed=None
+130.2357 	EXP 	New trial (rep=0, index=0): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', 'Brahmin'), ('CorrAns', 'a')])
+130.2839 	EXP 	main_ready_msg: autoDraw = False
+130.2839 	EXP 	button_L: autoDraw = False
+130.2839 	EXP 	ready_label_L: autoDraw = False
+130.2839 	EXP 	button_R: autoDraw = False
+130.2839 	EXP 	ready_label_R: autoDraw = False
+130.2839 	EXP 	image_stim: image = 'stimuli/blank.png'
+130.2839 	EXP 	text_stim: text = 'Brahmin'
+130.2839 	EXP 	trial_label_left: text = 'A = \nUpper Caste'
+130.2839 	EXP 	trial_label_right: text = 'L = \nLower Caste'
+130.2839 	EXP 	fixation: autoDraw = True
+130.7844 	EXP 	fixation: autoDraw = False
+130.7844 	EXP 	image_stim: autoDraw = True
+130.7844 	EXP 	text_stim: autoDraw = True
+130.7844 	EXP 	button_left: autoDraw = True
+130.7844 	EXP 	trial_label_left: autoDraw = True
+130.7844 	EXP 	button_right: autoDraw = True
+130.7844 	EXP 	trial_label_right: autoDraw = True
+131.3537 	DATA 	Keypress: a
+131.4011 	EXP 	fixation: autoDraw = False
+131.4011 	EXP 	image_stim: autoDraw = False
+131.4011 	EXP 	text_stim: autoDraw = False
+131.4011 	EXP 	button_left: autoDraw = False
+131.4011 	EXP 	trial_label_left: autoDraw = False
+131.4011 	EXP 	button_right: autoDraw = False
+131.4011 	EXP 	trial_label_right: autoDraw = False
+131.4011 	EXP 	feedback_msg: text = ':)'
+131.4011 	EXP 	feedback_msg: autoDraw = True
+132.3855 	EXP 	New trial (rep=0, index=1): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', ' Dalit'), ('CorrAns', 'l')])
+132.4337 	EXP 	feedback_msg: autoDraw = False
+132.4337 	EXP 	image_stim: image = 'stimuli/blank.png'
+132.4337 	EXP 	text_stim: text = ' Dalit'
+132.4337 	EXP 	trial_label_left: text = 'A = \nUpper Caste'
+132.4337 	EXP 	trial_label_right: text = 'L = \nLower Caste'
+132.4337 	EXP 	fixation: autoDraw = True
+132.9336 	EXP 	fixation: autoDraw = False
+132.9336 	EXP 	image_stim: autoDraw = True
+132.9336 	EXP 	text_stim: autoDraw = True
+132.9336 	EXP 	button_left: autoDraw = True
+132.9336 	EXP 	trial_label_left: autoDraw = True
+132.9336 	EXP 	button_right: autoDraw = True
+132.9336 	EXP 	trial_label_right: autoDraw = True
+133.4143 	DATA 	Keypress: l
+133.4674 	EXP 	fixation: autoDraw = False
+133.4674 	EXP 	image_stim: autoDraw = False
+133.4674 	EXP 	text_stim: autoDraw = False
+133.4674 	EXP 	button_left: autoDraw = False
+133.4674 	EXP 	trial_label_left: autoDraw = False
+133.4674 	EXP 	button_right: autoDraw = False
+133.4674 	EXP 	trial_label_right: autoDraw = False
+133.4674 	EXP 	feedback_msg: text = ':)'
+133.4674 	EXP 	feedback_msg: autoDraw = True
+134.4525 	EXP 	New trial (rep=0, index=2): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', ' Kshatriya'), ('CorrAns', 'a')])
+134.5008 	EXP 	feedback_msg: autoDraw = False
+134.5008 	EXP 	image_stim: image = 'stimuli/blank.png'
+134.5008 	EXP 	text_stim: text = ' Kshatriya'
+134.5008 	EXP 	trial_label_left: text = 'A = \nUpper Caste'
+134.5008 	EXP 	trial_label_right: text = 'L = \nLower Caste'
+134.5008 	EXP 	fixation: autoDraw = True
+135.0007 	EXP 	fixation: autoDraw = False
+135.0007 	EXP 	image_stim: autoDraw = True
+135.0007 	EXP 	text_stim: autoDraw = True
+135.0007 	EXP 	button_left: autoDraw = True
+135.0007 	EXP 	trial_label_left: autoDraw = True
+135.0007 	EXP 	button_right: autoDraw = True
+135.0007 	EXP 	trial_label_right: autoDraw = True
+135.7482 	DATA 	Keypress: a
+135.8001 	EXP 	fixation: autoDraw = False
+135.8001 	EXP 	image_stim: autoDraw = False
+135.8001 	EXP 	text_stim: autoDraw = False
+135.8001 	EXP 	button_left: autoDraw = False
+135.8001 	EXP 	trial_label_left: autoDraw = False
+135.8001 	EXP 	button_right: autoDraw = False
+135.8001 	EXP 	trial_label_right: autoDraw = False
+135.8001 	EXP 	feedback_msg: text = ':)'
+135.8001 	EXP 	feedback_msg: autoDraw = True
+136.7855 	EXP 	New trial (rep=0, index=3): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', 'Neech Jaati'), ('CorrAns', 'l')])
+136.8337 	EXP 	feedback_msg: autoDraw = False
+136.8337 	EXP 	image_stim: image = 'stimuli/blank.png'
+136.8337 	EXP 	text_stim: text = 'Neech Jaati'
+136.8337 	EXP 	trial_label_left: text = 'A = \nUpper Caste'
+136.8337 	EXP 	trial_label_right: text = 'L = \nLower Caste'
+136.8337 	EXP 	fixation: autoDraw = True
+137.3335 	EXP 	fixation: autoDraw = False
+137.3335 	EXP 	image_stim: autoDraw = True
+137.3335 	EXP 	text_stim: autoDraw = True
+137.3335 	EXP 	button_left: autoDraw = True
+137.3335 	EXP 	trial_label_left: autoDraw = True
+137.3335 	EXP 	button_right: autoDraw = True
+137.3335 	EXP 	trial_label_right: autoDraw = True
+137.9362 	DATA 	Keypress: l
+137.9669 	EXP 	fixation: autoDraw = False
+137.9669 	EXP 	image_stim: autoDraw = False
+137.9669 	EXP 	text_stim: autoDraw = False
+137.9669 	EXP 	button_left: autoDraw = False
+137.9669 	EXP 	trial_label_left: autoDraw = False
+137.9669 	EXP 	button_right: autoDraw = False
+137.9669 	EXP 	trial_label_right: autoDraw = False
+137.9669 	EXP 	feedback_msg: text = ':)'
+137.9669 	EXP 	feedback_msg: autoDraw = True
+138.9514 	EXP 	New trial (rep=0, index=4): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', ' Harijan'), ('CorrAns', 'l')])
+138.9995 	EXP 	feedback_msg: autoDraw = False
+138.9995 	EXP 	image_stim: image = 'stimuli/blank.png'
+138.9995 	EXP 	text_stim: text = ' Harijan'
+138.9995 	EXP 	trial_label_left: text = 'A = \nUpper Caste'
+138.9995 	EXP 	trial_label_right: text = 'L = \nLower Caste'
+138.9995 	EXP 	fixation: autoDraw = True
+139.4831 	EXP 	fixation: autoDraw = False
+139.4831 	EXP 	image_stim: autoDraw = True
+139.4831 	EXP 	text_stim: autoDraw = True
+139.4831 	EXP 	button_left: autoDraw = True
+139.4831 	EXP 	trial_label_left: autoDraw = True
+139.4831 	EXP 	button_right: autoDraw = True
+139.4831 	EXP 	trial_label_right: autoDraw = True
+139.8866 	DATA 	Keypress: l
+139.9172 	EXP 	fixation: autoDraw = False
+139.9172 	EXP 	image_stim: autoDraw = False
+139.9172 	EXP 	text_stim: autoDraw = False
+139.9172 	EXP 	button_left: autoDraw = False
+139.9172 	EXP 	trial_label_left: autoDraw = False
+139.9172 	EXP 	button_right: autoDraw = False
+139.9172 	EXP 	trial_label_right: autoDraw = False
+139.9172 	EXP 	feedback_msg: text = ':)'
+139.9172 	EXP 	feedback_msg: autoDraw = True
+140.9020 	EXP 	New trial (rep=0, index=5): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', ' Oonch Jaati'), ('CorrAns', 'a')])
+140.9494 	EXP 	feedback_msg: autoDraw = False
+140.9494 	EXP 	image_stim: image = 'stimuli/blank.png'
+140.9494 	EXP 	text_stim: text = ' Oonch Jaati'
+140.9494 	EXP 	trial_label_left: text = 'A = \nUpper Caste'
+140.9494 	EXP 	trial_label_right: text = 'L = \nLower Caste'
+140.9494 	EXP 	fixation: autoDraw = True
+141.4494 	EXP 	fixation: autoDraw = False
+141.4494 	EXP 	image_stim: autoDraw = True
+141.4494 	EXP 	text_stim: autoDraw = True
+141.4494 	EXP 	button_left: autoDraw = True
+141.4494 	EXP 	trial_label_left: autoDraw = True
+141.4494 	EXP 	button_right: autoDraw = True
+141.4494 	EXP 	trial_label_right: autoDraw = True
+142.2197 	DATA 	Keypress: a
+142.2499 	EXP 	fixation: autoDraw = False
+142.2499 	EXP 	image_stim: autoDraw = False
+142.2499 	EXP 	text_stim: autoDraw = False
+142.2499 	EXP 	button_left: autoDraw = False
+142.2499 	EXP 	trial_label_left: autoDraw = False
+142.2499 	EXP 	button_right: autoDraw = False
+142.2499 	EXP 	trial_label_right: autoDraw = False
+142.2499 	EXP 	feedback_msg: text = ':)'
+142.2499 	EXP 	feedback_msg: autoDraw = True
+143.2344 	EXP 	New trial (rep=0, index=6): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', ' Pandit'), ('CorrAns', 'a')])
+143.2834 	EXP 	feedback_msg: autoDraw = False
+143.2834 	EXP 	image_stim: image = 'stimuli/blank.png'
+143.2834 	EXP 	text_stim: text = ' Pandit'
+143.2834 	EXP 	trial_label_left: text = 'A = \nUpper Caste'
+143.2834 	EXP 	trial_label_right: text = 'L = \nLower Caste'
+143.2834 	EXP 	fixation: autoDraw = True
+143.7664 	EXP 	fixation: autoDraw = False
+143.7664 	EXP 	image_stim: autoDraw = True
+143.7664 	EXP 	text_stim: autoDraw = True
+143.7664 	EXP 	button_left: autoDraw = True
+143.7664 	EXP 	trial_label_left: autoDraw = True
+143.7664 	EXP 	button_right: autoDraw = True
+143.7664 	EXP 	trial_label_right: autoDraw = True
+144.2165 	DATA 	Keypress: a
+144.2660 	EXP 	fixation: autoDraw = False
+144.2660 	EXP 	image_stim: autoDraw = False
+144.2660 	EXP 	text_stim: autoDraw = False
+144.2660 	EXP 	button_left: autoDraw = False
+144.2660 	EXP 	trial_label_left: autoDraw = False
+144.2660 	EXP 	button_right: autoDraw = False
+144.2660 	EXP 	trial_label_right: autoDraw = False
+144.2660 	EXP 	feedback_msg: text = ':)'
+144.2660 	EXP 	feedback_msg: autoDraw = True
+145.2511 	EXP 	New trial (rep=0, index=7): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', ' Avarna'), ('CorrAns', 'l')])
+145.2826 	EXP 	feedback_msg: autoDraw = False
+145.2826 	EXP 	image_stim: image = 'stimuli/blank.png'
+145.2826 	EXP 	text_stim: text = ' Avarna'
+145.2826 	EXP 	trial_label_left: text = 'A = \nUpper Caste'
+145.2826 	EXP 	trial_label_right: text = 'L = \nLower Caste'
+145.2826 	EXP 	fixation: autoDraw = True
+145.7825 	EXP 	fixation: autoDraw = False
+145.7825 	EXP 	image_stim: autoDraw = True
+145.7825 	EXP 	text_stim: autoDraw = True
+145.7825 	EXP 	button_left: autoDraw = True
+145.7825 	EXP 	trial_label_left: autoDraw = True
+145.7825 	EXP 	button_right: autoDraw = True
+145.7825 	EXP 	trial_label_right: autoDraw = True
+146.1534 	DATA 	Keypress: a
+146.1827 	EXP 	fixation: autoDraw = False
+146.1827 	EXP 	image_stim: autoDraw = False
+146.1827 	EXP 	text_stim: autoDraw = False
+146.1827 	EXP 	button_left: autoDraw = False
+146.1827 	EXP 	trial_label_left: autoDraw = False
+146.1827 	EXP 	button_right: autoDraw = False
+146.1827 	EXP 	trial_label_right: autoDraw = False
+146.1827 	EXP 	feedback_msg: text = 'Oops'
+146.1827 	EXP 	feedback_msg: autoDraw = True
+147.1842 	EXP 	New trial (rep=0, index=8): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', ' Savarna'), ('CorrAns', 'a')])
+147.2326 	EXP 	feedback_msg: autoDraw = False
+147.2326 	EXP 	image_stim: image = 'stimuli/blank.png'
+147.2326 	EXP 	text_stim: text = ' Savarna'
+147.2326 	EXP 	trial_label_left: text = 'A = \nUpper Caste'
+147.2326 	EXP 	trial_label_right: text = 'L = \nLower Caste'
+147.2326 	EXP 	fixation: autoDraw = True
+147.7324 	EXP 	fixation: autoDraw = False
+147.7324 	EXP 	image_stim: autoDraw = True
+147.7324 	EXP 	text_stim: autoDraw = True
+147.7324 	EXP 	button_left: autoDraw = True
+147.7324 	EXP 	trial_label_left: autoDraw = True
+147.7324 	EXP 	button_right: autoDraw = True
+147.7324 	EXP 	trial_label_right: autoDraw = True
+148.6159 	DATA 	Keypress: a
+148.6821 	EXP 	fixation: autoDraw = False
+148.6821 	EXP 	image_stim: autoDraw = False
+148.6821 	EXP 	text_stim: autoDraw = False
+148.6821 	EXP 	button_left: autoDraw = False
+148.6821 	EXP 	trial_label_left: autoDraw = False
+148.6821 	EXP 	button_right: autoDraw = False
+148.6821 	EXP 	trial_label_right: autoDraw = False
+148.6821 	EXP 	feedback_msg: text = ':)'
+148.6821 	EXP 	feedback_msg: autoDraw = True
+149.6501 	EXP 	New trial (rep=0, index=9): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', ' Adivasi'), ('CorrAns', 'l')])
+149.6827 	EXP 	feedback_msg: autoDraw = False
+149.6827 	EXP 	image_stim: image = 'stimuli/blank.png'
+149.6827 	EXP 	text_stim: text = ' Adivasi'
+149.6827 	EXP 	trial_label_left: text = 'A = \nUpper Caste'
+149.6827 	EXP 	trial_label_right: text = 'L = \nLower Caste'
+149.6827 	EXP 	fixation: autoDraw = True
+150.1827 	EXP 	fixation: autoDraw = False
+150.1827 	EXP 	image_stim: autoDraw = True
+150.1827 	EXP 	text_stim: autoDraw = True
+150.1827 	EXP 	button_left: autoDraw = True
+150.1827 	EXP 	trial_label_left: autoDraw = True
+150.1827 	EXP 	button_right: autoDraw = True
+150.1827 	EXP 	trial_label_right: autoDraw = True
+150.7851 	DATA 	Keypress: l
+150.8156 	EXP 	fixation: autoDraw = False
+150.8156 	EXP 	image_stim: autoDraw = False
+150.8156 	EXP 	text_stim: autoDraw = False
+150.8156 	EXP 	button_left: autoDraw = False
+150.8156 	EXP 	trial_label_left: autoDraw = False
+150.8156 	EXP 	button_right: autoDraw = False
+150.8156 	EXP 	trial_label_right: autoDraw = False
+150.8156 	EXP 	feedback_msg: text = ':)'
+150.8156 	EXP 	feedback_msg: autoDraw = True
+151.8017 	EXP 	New trial (rep=0, index=2): OrderedDict([('conds_file', 'cong_test.xlsx'), ('label_left', 'A = \nUpper Caste or \nHuman'), ('label_right', 'L = \nLower Caste or \nNon-human')])
+151.8486 	EXP 	feedback_msg: autoDraw = False
+151.8486 	EXP 	ready_label_L: text = 'A = \nUpper Caste or \nHuman'
+151.8486 	EXP 	ready_label_R: text = 'L = \nLower Caste or \nNon-human'
+151.8486 	EXP 	main_ready_msg: autoDraw = True
+151.8486 	EXP 	button_L: autoDraw = True
+151.8486 	EXP 	ready_label_L: autoDraw = True
+151.8486 	EXP 	button_R: autoDraw = True
+151.8486 	EXP 	ready_label_R: autoDraw = True
+159.4169 	DATA 	Keypress: space
+159.5183 	EXP 	Imported cong_test.xlsx as conditions, 20 conditions, 3 params
+159.5202 	EXP 	Created sequence: random, trialTypes=20, nReps=1, seed=None
+159.5216 	EXP 	New trial (rep=0, index=0): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', ' Savarna'), ('CorrAns', 'a')])
+159.5984 	EXP 	main_ready_msg: autoDraw = False
+159.5984 	EXP 	button_L: autoDraw = False
+159.5984 	EXP 	ready_label_L: autoDraw = False
+159.5984 	EXP 	button_R: autoDraw = False
+159.5984 	EXP 	ready_label_R: autoDraw = False
+159.5984 	EXP 	image_stim: image = 'stimuli/blank.png'
+159.5984 	EXP 	text_stim: text = ' Savarna'
+159.5984 	EXP 	trial_label_left: text = 'A = \nUpper Caste or \nHuman'
+159.5984 	EXP 	trial_label_right: text = 'L = \nLower Caste or \nNon-human'
+159.5984 	EXP 	fixation: autoDraw = True
+160.0812 	EXP 	fixation: autoDraw = False
+160.0812 	EXP 	image_stim: autoDraw = True
+160.0812 	EXP 	text_stim: autoDraw = True
+160.0812 	EXP 	button_left: autoDraw = True
+160.0812 	EXP 	trial_label_left: autoDraw = True
+160.0812 	EXP 	button_right: autoDraw = True
+160.0812 	EXP 	trial_label_right: autoDraw = True
+160.6846 	DATA 	Keypress: a
+160.7317 	EXP 	fixation: autoDraw = False
+160.7317 	EXP 	image_stim: autoDraw = False
+160.7317 	EXP 	text_stim: autoDraw = False
+160.7317 	EXP 	button_left: autoDraw = False
+160.7317 	EXP 	trial_label_left: autoDraw = False
+160.7317 	EXP 	button_right: autoDraw = False
+160.7317 	EXP 	trial_label_right: autoDraw = False
+160.7317 	EXP 	feedback_msg: text = ':)'
+160.7317 	EXP 	feedback_msg: autoDraw = True
+161.7008 	EXP 	New trial (rep=0, index=1): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', 'Citizen'), ('CorrAns', 'a')])
+161.7319 	EXP 	feedback_msg: autoDraw = False
+161.7319 	EXP 	image_stim: image = 'stimuli/blank.png'
+161.7319 	EXP 	text_stim: text = 'Citizen'
+161.7319 	EXP 	trial_label_left: text = 'A = \nUpper Caste or \nHuman'
+161.7319 	EXP 	trial_label_right: text = 'L = \nLower Caste or \nNon-human'
+161.7319 	EXP 	fixation: autoDraw = True
+162.2312 	EXP 	fixation: autoDraw = False
+162.2312 	EXP 	image_stim: autoDraw = True
+162.2312 	EXP 	text_stim: autoDraw = True
+162.2312 	EXP 	button_left: autoDraw = True
+162.2312 	EXP 	trial_label_left: autoDraw = True
+162.2312 	EXP 	button_right: autoDraw = True
+162.2312 	EXP 	trial_label_right: autoDraw = True
+162.7363 	DATA 	Keypress: a
+162.7641 	EXP 	fixation: autoDraw = False
+162.7641 	EXP 	image_stim: autoDraw = False
+162.7641 	EXP 	text_stim: autoDraw = False
+162.7641 	EXP 	button_left: autoDraw = False
+162.7641 	EXP 	trial_label_left: autoDraw = False
+162.7641 	EXP 	button_right: autoDraw = False
+162.7641 	EXP 	trial_label_right: autoDraw = False
+162.7641 	EXP 	feedback_msg: text = ':)'
+162.7641 	EXP 	feedback_msg: autoDraw = True
+163.7494 	EXP 	New trial (rep=0, index=2): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', ' Kshatriya'), ('CorrAns', 'a')])
+163.7818 	EXP 	feedback_msg: autoDraw = False
+163.7818 	EXP 	image_stim: image = 'stimuli/blank.png'
+163.7818 	EXP 	text_stim: text = ' Kshatriya'
+163.7818 	EXP 	trial_label_left: text = 'A = \nUpper Caste or \nHuman'
+163.7818 	EXP 	trial_label_right: text = 'L = \nLower Caste or \nNon-human'
+163.7818 	EXP 	fixation: autoDraw = True
+164.2644 	EXP 	fixation: autoDraw = False
+164.2644 	EXP 	image_stim: autoDraw = True
+164.2644 	EXP 	text_stim: autoDraw = True
+164.2644 	EXP 	button_left: autoDraw = True
+164.2644 	EXP 	trial_label_left: autoDraw = True
+164.2644 	EXP 	button_right: autoDraw = True
+164.2644 	EXP 	trial_label_right: autoDraw = True
+164.8014 	DATA 	Keypress: a
+164.8312 	EXP 	fixation: autoDraw = False
+164.8312 	EXP 	image_stim: autoDraw = False
+164.8312 	EXP 	text_stim: autoDraw = False
+164.8312 	EXP 	button_left: autoDraw = False
+164.8312 	EXP 	trial_label_left: autoDraw = False
+164.8312 	EXP 	button_right: autoDraw = False
+164.8312 	EXP 	trial_label_right: autoDraw = False
+164.8312 	EXP 	feedback_msg: text = ':)'
+164.8312 	EXP 	feedback_msg: autoDraw = True
+165.8155 	EXP 	New trial (rep=0, index=3): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', ' Pandit'), ('CorrAns', 'a')])
+165.8478 	EXP 	feedback_msg: autoDraw = False
+165.8478 	EXP 	image_stim: image = 'stimuli/blank.png'
+165.8478 	EXP 	text_stim: text = ' Pandit'
+165.8478 	EXP 	trial_label_left: text = 'A = \nUpper Caste or \nHuman'
+165.8478 	EXP 	trial_label_right: text = 'L = \nLower Caste or \nNon-human'
+165.8478 	EXP 	fixation: autoDraw = True
+166.3314 	EXP 	fixation: autoDraw = False
+166.3314 	EXP 	image_stim: autoDraw = True
+166.3314 	EXP 	text_stim: autoDraw = True
+166.3314 	EXP 	button_left: autoDraw = True
+166.3314 	EXP 	trial_label_left: autoDraw = True
+166.3314 	EXP 	button_right: autoDraw = True
+166.3314 	EXP 	trial_label_right: autoDraw = True
+166.8128 	DATA 	Keypress: a
+166.8640 	EXP 	fixation: autoDraw = False
+166.8640 	EXP 	image_stim: autoDraw = False
+166.8640 	EXP 	text_stim: autoDraw = False
+166.8640 	EXP 	button_left: autoDraw = False
+166.8640 	EXP 	trial_label_left: autoDraw = False
+166.8640 	EXP 	button_right: autoDraw = False
+166.8640 	EXP 	trial_label_right: autoDraw = False
+166.8640 	EXP 	feedback_msg: text = ':)'
+166.8640 	EXP 	feedback_msg: autoDraw = True
+167.8492 	EXP 	New trial (rep=0, index=4): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', 'Children'), ('CorrAns', 'a')])
+167.8809 	EXP 	feedback_msg: autoDraw = False
+167.8809 	EXP 	image_stim: image = 'stimuli/blank.png'
+167.8809 	EXP 	text_stim: text = 'Children'
+167.8809 	EXP 	trial_label_left: text = 'A = \nUpper Caste or \nHuman'
+167.8809 	EXP 	trial_label_right: text = 'L = \nLower Caste or \nNon-human'
+167.8809 	EXP 	fixation: autoDraw = True
+168.3812 	EXP 	fixation: autoDraw = False
+168.3812 	EXP 	image_stim: autoDraw = True
+168.3812 	EXP 	text_stim: autoDraw = True
+168.3812 	EXP 	button_left: autoDraw = True
+168.3812 	EXP 	trial_label_left: autoDraw = True
+168.3812 	EXP 	button_right: autoDraw = True
+168.3812 	EXP 	trial_label_right: autoDraw = True
+168.9509 	DATA 	Keypress: a
+168.9810 	EXP 	fixation: autoDraw = False
+168.9810 	EXP 	image_stim: autoDraw = False
+168.9810 	EXP 	text_stim: autoDraw = False
+168.9810 	EXP 	button_left: autoDraw = False
+168.9810 	EXP 	trial_label_left: autoDraw = False
+168.9810 	EXP 	button_right: autoDraw = False
+168.9810 	EXP 	trial_label_right: autoDraw = False
+168.9810 	EXP 	feedback_msg: text = ':)'
+168.9810 	EXP 	feedback_msg: autoDraw = True
+169.9658 	EXP 	New trial (rep=0, index=5): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', 'Cattle'), ('CorrAns', 'l')])
+169.9969 	EXP 	feedback_msg: autoDraw = False
+169.9969 	EXP 	image_stim: image = 'stimuli/blank.png'
+169.9969 	EXP 	text_stim: text = 'Cattle'
+169.9969 	EXP 	trial_label_left: text = 'A = \nUpper Caste or \nHuman'
+169.9969 	EXP 	trial_label_right: text = 'L = \nLower Caste or \nNon-human'
+169.9969 	EXP 	fixation: autoDraw = True
+170.4973 	EXP 	fixation: autoDraw = False
+170.4973 	EXP 	image_stim: autoDraw = True
+170.4973 	EXP 	text_stim: autoDraw = True
+170.4973 	EXP 	button_left: autoDraw = True
+170.4973 	EXP 	trial_label_left: autoDraw = True
+170.4973 	EXP 	button_right: autoDraw = True
+170.4973 	EXP 	trial_label_right: autoDraw = True
+171.2123 	DATA 	Keypress: l
+171.2640 	EXP 	fixation: autoDraw = False
+171.2640 	EXP 	image_stim: autoDraw = False
+171.2640 	EXP 	text_stim: autoDraw = False
+171.2640 	EXP 	button_left: autoDraw = False
+171.2640 	EXP 	trial_label_left: autoDraw = False
+171.2640 	EXP 	button_right: autoDraw = False
+171.2640 	EXP 	trial_label_right: autoDraw = False
+171.2640 	EXP 	feedback_msg: text = ':)'
+171.2640 	EXP 	feedback_msg: autoDraw = True
+172.2493 	EXP 	New trial (rep=0, index=6): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', ' Oonch Jaati'), ('CorrAns', 'a')])
+172.2973 	EXP 	feedback_msg: autoDraw = False
+172.2973 	EXP 	image_stim: image = 'stimuli/blank.png'
+172.2973 	EXP 	text_stim: text = ' Oonch Jaati'
+172.2973 	EXP 	trial_label_left: text = 'A = \nUpper Caste or \nHuman'
+172.2973 	EXP 	trial_label_right: text = 'L = \nLower Caste or \nNon-human'
+172.2973 	EXP 	fixation: autoDraw = True
+172.7802 	EXP 	fixation: autoDraw = False
+172.7802 	EXP 	image_stim: autoDraw = True
+172.7802 	EXP 	text_stim: autoDraw = True
+172.7802 	EXP 	button_left: autoDraw = True
+172.7802 	EXP 	trial_label_left: autoDraw = True
+172.7802 	EXP 	button_right: autoDraw = True
+172.7802 	EXP 	trial_label_right: autoDraw = True
+173.3161 	DATA 	Keypress: l
+173.3473 	EXP 	fixation: autoDraw = False
+173.3473 	EXP 	image_stim: autoDraw = False
+173.3473 	EXP 	text_stim: autoDraw = False
+173.3473 	EXP 	button_left: autoDraw = False
+173.3473 	EXP 	trial_label_left: autoDraw = False
+173.3473 	EXP 	button_right: autoDraw = False
+173.3473 	EXP 	trial_label_right: autoDraw = False
+173.3473 	EXP 	feedback_msg: text = 'Oops'
+173.3473 	EXP 	feedback_msg: autoDraw = True
+174.3321 	EXP 	New trial (rep=0, index=7): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', ' Dalit'), ('CorrAns', 'l')])
+174.3632 	EXP 	feedback_msg: autoDraw = False
+174.3632 	EXP 	image_stim: image = 'stimuli/blank.png'
+174.3632 	EXP 	text_stim: text = ' Dalit'
+174.3632 	EXP 	trial_label_left: text = 'A = \nUpper Caste or \nHuman'
+174.3632 	EXP 	trial_label_right: text = 'L = \nLower Caste or \nNon-human'
+174.3632 	EXP 	fixation: autoDraw = True
+174.8634 	EXP 	fixation: autoDraw = False
+174.8634 	EXP 	image_stim: autoDraw = True
+174.8634 	EXP 	text_stim: autoDraw = True
+174.8634 	EXP 	button_left: autoDraw = True
+174.8634 	EXP 	trial_label_left: autoDraw = True
+174.8634 	EXP 	button_right: autoDraw = True
+174.8634 	EXP 	trial_label_right: autoDraw = True
+175.4672 	DATA 	Keypress: l
+175.5134 	EXP 	fixation: autoDraw = False
+175.5134 	EXP 	image_stim: autoDraw = False
+175.5134 	EXP 	text_stim: autoDraw = False
+175.5134 	EXP 	button_left: autoDraw = False
+175.5134 	EXP 	trial_label_left: autoDraw = False
+175.5134 	EXP 	button_right: autoDraw = False
+175.5134 	EXP 	trial_label_right: autoDraw = False
+175.5134 	EXP 	feedback_msg: text = ':)'
+175.5134 	EXP 	feedback_msg: autoDraw = True
+176.4820 	EXP 	New trial (rep=0, index=8): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', ' Harijan'), ('CorrAns', 'l')])
+176.5133 	EXP 	feedback_msg: autoDraw = False
+176.5133 	EXP 	image_stim: image = 'stimuli/blank.png'
+176.5133 	EXP 	text_stim: text = ' Harijan'
+176.5133 	EXP 	trial_label_left: text = 'A = \nUpper Caste or \nHuman'
+176.5133 	EXP 	trial_label_right: text = 'L = \nLower Caste or \nNon-human'
+176.5133 	EXP 	fixation: autoDraw = True
+177.0132 	EXP 	fixation: autoDraw = False
+177.0132 	EXP 	image_stim: autoDraw = True
+177.0132 	EXP 	text_stim: autoDraw = True
+177.0132 	EXP 	button_left: autoDraw = True
+177.0132 	EXP 	trial_label_left: autoDraw = True
+177.0132 	EXP 	button_right: autoDraw = True
+177.0132 	EXP 	trial_label_right: autoDraw = True
+177.5300 	DATA 	Keypress: l
+177.5809 	EXP 	fixation: autoDraw = False
+177.5809 	EXP 	image_stim: autoDraw = False
+177.5809 	EXP 	text_stim: autoDraw = False
+177.5809 	EXP 	button_left: autoDraw = False
+177.5809 	EXP 	trial_label_left: autoDraw = False
+177.5809 	EXP 	button_right: autoDraw = False
+177.5809 	EXP 	trial_label_right: autoDraw = False
+177.5809 	EXP 	feedback_msg: text = ':)'
+177.5809 	EXP 	feedback_msg: autoDraw = True
+178.5823 	EXP 	New trial (rep=0, index=9): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', 'Rodent'), ('CorrAns', 'l')])
+178.6141 	EXP 	feedback_msg: autoDraw = False
+178.6141 	EXP 	image_stim: image = 'stimuli/blank.png'
+178.6141 	EXP 	text_stim: text = 'Rodent'
+178.6141 	EXP 	trial_label_left: text = 'A = \nUpper Caste or \nHuman'
+178.6141 	EXP 	trial_label_right: text = 'L = \nLower Caste or \nNon-human'
+178.6141 	EXP 	fixation: autoDraw = True
+179.1131 	EXP 	fixation: autoDraw = False
+179.1131 	EXP 	image_stim: autoDraw = True
+179.1131 	EXP 	text_stim: autoDraw = True
+179.1131 	EXP 	button_left: autoDraw = True
+179.1131 	EXP 	trial_label_left: autoDraw = True
+179.1131 	EXP 	button_right: autoDraw = True
+179.1131 	EXP 	trial_label_right: autoDraw = True
+179.9421 	DATA 	Keypress: l
+179.9964 	EXP 	fixation: autoDraw = False
+179.9964 	EXP 	image_stim: autoDraw = False
+179.9964 	EXP 	text_stim: autoDraw = False
+179.9964 	EXP 	button_left: autoDraw = False
+179.9964 	EXP 	trial_label_left: autoDraw = False
+179.9964 	EXP 	button_right: autoDraw = False
+179.9964 	EXP 	trial_label_right: autoDraw = False
+179.9964 	EXP 	feedback_msg: text = ':)'
+179.9964 	EXP 	feedback_msg: autoDraw = True
+180.9814 	EXP 	New trial (rep=0, index=10): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', 'Rabbit'), ('CorrAns', 'l')])
+181.0127 	EXP 	feedback_msg: autoDraw = False
+181.0127 	EXP 	image_stim: image = 'stimuli/blank.png'
+181.0127 	EXP 	text_stim: text = 'Rabbit'
+181.0127 	EXP 	trial_label_left: text = 'A = \nUpper Caste or \nHuman'
+181.0127 	EXP 	trial_label_right: text = 'L = \nLower Caste or \nNon-human'
+181.0127 	EXP 	fixation: autoDraw = True
+181.5129 	EXP 	fixation: autoDraw = False
+181.5129 	EXP 	image_stim: autoDraw = True
+181.5129 	EXP 	text_stim: autoDraw = True
+181.5129 	EXP 	button_left: autoDraw = True
+181.5129 	EXP 	trial_label_left: autoDraw = True
+181.5129 	EXP 	button_right: autoDraw = True
+181.5129 	EXP 	trial_label_right: autoDraw = True
+182.2264 	DATA 	Keypress: l
+182.2795 	EXP 	fixation: autoDraw = False
+182.2795 	EXP 	image_stim: autoDraw = False
+182.2795 	EXP 	text_stim: autoDraw = False
+182.2795 	EXP 	button_left: autoDraw = False
+182.2795 	EXP 	trial_label_left: autoDraw = False
+182.2795 	EXP 	button_right: autoDraw = False
+182.2795 	EXP 	trial_label_right: autoDraw = False
+182.2795 	EXP 	feedback_msg: text = ':)'
+182.2795 	EXP 	feedback_msg: autoDraw = True
+183.2816 	EXP 	New trial (rep=0, index=11): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', 'Cub'), ('CorrAns', 'l')])
+183.3137 	EXP 	feedback_msg: autoDraw = False
+183.3137 	EXP 	image_stim: image = 'stimuli/blank.png'
+183.3137 	EXP 	text_stim: text = 'Cub'
+183.3137 	EXP 	trial_label_left: text = 'A = \nUpper Caste or \nHuman'
+183.3137 	EXP 	trial_label_right: text = 'L = \nLower Caste or \nNon-human'
+183.3137 	EXP 	fixation: autoDraw = True
+183.8131 	EXP 	fixation: autoDraw = False
+183.8131 	EXP 	image_stim: autoDraw = True
+183.8131 	EXP 	text_stim: autoDraw = True
+183.8131 	EXP 	button_left: autoDraw = True
+183.8131 	EXP 	trial_label_left: autoDraw = True
+183.8131 	EXP 	button_right: autoDraw = True
+183.8131 	EXP 	trial_label_right: autoDraw = True
+184.3609 	DATA 	Keypress: l
+184.4129 	EXP 	fixation: autoDraw = False
+184.4129 	EXP 	image_stim: autoDraw = False
+184.4129 	EXP 	text_stim: autoDraw = False
+184.4129 	EXP 	button_left: autoDraw = False
+184.4129 	EXP 	trial_label_left: autoDraw = False
+184.4129 	EXP 	button_right: autoDraw = False
+184.4129 	EXP 	trial_label_right: autoDraw = False
+184.4129 	EXP 	feedback_msg: text = ':)'
+184.4129 	EXP 	feedback_msg: autoDraw = True
+185.3983 	EXP 	New trial (rep=0, index=12): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', 'Man'), ('CorrAns', 'a')])
+185.4287 	EXP 	feedback_msg: autoDraw = False
+185.4287 	EXP 	image_stim: image = 'stimuli/blank.png'
+185.4287 	EXP 	text_stim: text = 'Man'
+185.4287 	EXP 	trial_label_left: text = 'A = \nUpper Caste or \nHuman'
+185.4287 	EXP 	trial_label_right: text = 'L = \nLower Caste or \nNon-human'
+185.4287 	EXP 	fixation: autoDraw = True
+185.9465 	EXP 	fixation: autoDraw = False
+185.9465 	EXP 	image_stim: autoDraw = True
+185.9465 	EXP 	text_stim: autoDraw = True
+185.9465 	EXP 	button_left: autoDraw = True
+185.9465 	EXP 	trial_label_left: autoDraw = True
+185.9465 	EXP 	button_right: autoDraw = True
+185.9465 	EXP 	trial_label_right: autoDraw = True
+186.4900 	DATA 	Keypress: a
+186.5482 	EXP 	fixation: autoDraw = False
+186.5482 	EXP 	image_stim: autoDraw = False
+186.5482 	EXP 	text_stim: autoDraw = False
+186.5482 	EXP 	button_left: autoDraw = False
+186.5482 	EXP 	trial_label_left: autoDraw = False
+186.5482 	EXP 	button_right: autoDraw = False
+186.5482 	EXP 	trial_label_right: autoDraw = False
+186.5482 	EXP 	feedback_msg: text = ':)'
+186.5482 	EXP 	feedback_msg: autoDraw = True
+187.5304 	EXP 	New trial (rep=0, index=13): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', ' Avarna'), ('CorrAns', 'l')])
+202.5186 	DATA 	Keypress: space
+202.5254 	EXP 	feedback_msg: autoDraw = False
+202.5254 	EXP 	image_stim: image = 'stimuli/blank.png'
+202.5254 	EXP 	text_stim: text = ' Avarna'
+202.5254 	EXP 	trial_label_left: text = 'A = \nUpper Caste or \nHuman'
+202.5254 	EXP 	trial_label_right: text = 'L = \nLower Caste or \nNon-human'
+202.5254 	EXP 	fixation: autoDraw = True
+203.0257 	EXP 	fixation: autoDraw = False
+203.0257 	EXP 	image_stim: autoDraw = True
+203.0257 	EXP 	text_stim: autoDraw = True
+203.0257 	EXP 	button_left: autoDraw = True
+203.0257 	EXP 	trial_label_left: autoDraw = True
+203.0257 	EXP 	button_right: autoDraw = True
+203.0257 	EXP 	trial_label_right: autoDraw = True
+205.1308 	DATA 	Keypress: l
+205.1616 	EXP 	fixation: autoDraw = False
+205.1616 	EXP 	image_stim: autoDraw = False
+205.1616 	EXP 	text_stim: autoDraw = False
+205.1616 	EXP 	button_left: autoDraw = False
+205.1616 	EXP 	trial_label_left: autoDraw = False
+205.1616 	EXP 	button_right: autoDraw = False
+205.1616 	EXP 	trial_label_right: autoDraw = False
+205.1616 	EXP 	feedback_msg: text = ':)'
+205.1616 	EXP 	feedback_msg: autoDraw = True
+206.1462 	EXP 	New trial (rep=0, index=14): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', 'Brahmin'), ('CorrAns', 'a')])
+206.1774 	EXP 	feedback_msg: autoDraw = False
+206.1774 	EXP 	image_stim: image = 'stimuli/blank.png'
+206.1774 	EXP 	text_stim: text = 'Brahmin'
+206.1774 	EXP 	trial_label_left: text = 'A = \nUpper Caste or \nHuman'
+206.1774 	EXP 	trial_label_right: text = 'L = \nLower Caste or \nNon-human'
+206.1774 	EXP 	fixation: autoDraw = True
+206.6755 	EXP 	fixation: autoDraw = False
+206.6755 	EXP 	image_stim: autoDraw = True
+206.6755 	EXP 	text_stim: autoDraw = True
+206.6755 	EXP 	button_left: autoDraw = True
+206.6755 	EXP 	trial_label_left: autoDraw = True
+206.6755 	EXP 	button_right: autoDraw = True
+206.6755 	EXP 	trial_label_right: autoDraw = True
+207.2572 	DATA 	Keypress: a
+207.3087 	EXP 	fixation: autoDraw = False
+207.3087 	EXP 	image_stim: autoDraw = False
+207.3087 	EXP 	text_stim: autoDraw = False
+207.3087 	EXP 	button_left: autoDraw = False
+207.3087 	EXP 	trial_label_left: autoDraw = False
+207.3087 	EXP 	button_right: autoDraw = False
+207.3087 	EXP 	trial_label_right: autoDraw = False
+207.3087 	EXP 	feedback_msg: text = ':)'
+207.3087 	EXP 	feedback_msg: autoDraw = True
+208.2938 	EXP 	New trial (rep=0, index=15): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', 'Woman'), ('CorrAns', 'a')])
+208.3255 	EXP 	feedback_msg: autoDraw = False
+208.3255 	EXP 	image_stim: image = 'stimuli/blank.png'
+208.3255 	EXP 	text_stim: text = 'Woman'
+208.3255 	EXP 	trial_label_left: text = 'A = \nUpper Caste or \nHuman'
+208.3255 	EXP 	trial_label_right: text = 'L = \nLower Caste or \nNon-human'
+208.3255 	EXP 	fixation: autoDraw = True
+208.8254 	EXP 	fixation: autoDraw = False
+208.8254 	EXP 	image_stim: autoDraw = True
+208.8254 	EXP 	text_stim: autoDraw = True
+208.8254 	EXP 	button_left: autoDraw = True
+208.8254 	EXP 	trial_label_left: autoDraw = True
+208.8254 	EXP 	button_right: autoDraw = True
+208.8254 	EXP 	trial_label_right: autoDraw = True
+209.3961 	DATA 	Keypress: a
+209.4254 	EXP 	fixation: autoDraw = False
+209.4254 	EXP 	image_stim: autoDraw = False
+209.4254 	EXP 	text_stim: autoDraw = False
+209.4254 	EXP 	button_left: autoDraw = False
+209.4254 	EXP 	trial_label_left: autoDraw = False
+209.4254 	EXP 	button_right: autoDraw = False
+209.4254 	EXP 	trial_label_right: autoDraw = False
+209.4254 	EXP 	feedback_msg: text = ':)'
+209.4254 	EXP 	feedback_msg: autoDraw = True
+210.4124 	EXP 	New trial (rep=0, index=16): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', 'Neech Jaati'), ('CorrAns', 'l')])
+210.4586 	EXP 	feedback_msg: autoDraw = False
+210.4586 	EXP 	feedback_msg: autoDraw = False
+210.4586 	EXP 	image_stim: image = 'stimuli/blank.png'
+210.4586 	EXP 	text_stim: text = 'Neech Jaati'
+210.4586 	EXP 	trial_label_left: text = 'A = \nUpper Caste or \nHuman'
+210.4586 	EXP 	trial_label_right: text = 'L = \nLower Caste or \nNon-human'
+210.4586 	EXP 	fixation: autoDraw = True
+210.9418 	EXP 	fixation: autoDraw = False
+210.9418 	EXP 	image_stim: autoDraw = True
+210.9418 	EXP 	text_stim: autoDraw = True
+210.9418 	EXP 	button_left: autoDraw = True
+210.9418 	EXP 	trial_label_left: autoDraw = True
+210.9418 	EXP 	button_right: autoDraw = True
+210.9418 	EXP 	trial_label_right: autoDraw = True
+211.4124 	DATA 	Keypress: l
+211.4417 	EXP 	fixation: autoDraw = False
+211.4417 	EXP 	image_stim: autoDraw = False
+211.4417 	EXP 	text_stim: autoDraw = False
+211.4417 	EXP 	button_left: autoDraw = False
+211.4417 	EXP 	trial_label_left: autoDraw = False
+211.4417 	EXP 	button_right: autoDraw = False
+211.4417 	EXP 	trial_label_right: autoDraw = False
+211.4417 	EXP 	feedback_msg: text = ':)'
+211.4417 	EXP 	feedback_msg: autoDraw = True
+212.4268 	EXP 	New trial (rep=0, index=17): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', 'Fox'), ('CorrAns', 'l')])
+212.4585 	EXP 	feedback_msg: autoDraw = False
+212.4585 	EXP 	image_stim: image = 'stimuli/blank.png'
+212.4585 	EXP 	text_stim: text = 'Fox'
+212.4585 	EXP 	trial_label_left: text = 'A = \nUpper Caste or \nHuman'
+212.4585 	EXP 	trial_label_right: text = 'L = \nLower Caste or \nNon-human'
+212.4585 	EXP 	fixation: autoDraw = True
+212.9584 	EXP 	fixation: autoDraw = False
+212.9584 	EXP 	image_stim: autoDraw = True
+212.9584 	EXP 	text_stim: autoDraw = True
+212.9584 	EXP 	button_left: autoDraw = True
+212.9584 	EXP 	trial_label_left: autoDraw = True
+212.9584 	EXP 	button_right: autoDraw = True
+212.9584 	EXP 	trial_label_right: autoDraw = True
+213.6951 	DATA 	Keypress: l
+213.7250 	EXP 	fixation: autoDraw = False
+213.7250 	EXP 	image_stim: autoDraw = False
+213.7250 	EXP 	text_stim: autoDraw = False
+213.7250 	EXP 	button_left: autoDraw = False
+213.7250 	EXP 	trial_label_left: autoDraw = False
+213.7250 	EXP 	button_right: autoDraw = False
+213.7250 	EXP 	trial_label_right: autoDraw = False
+213.7250 	EXP 	feedback_msg: text = ':)'
+213.7250 	EXP 	feedback_msg: autoDraw = True
+214.7102 	EXP 	New trial (rep=0, index=18): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', ' Adivasi'), ('CorrAns', 'l')])
+214.7417 	EXP 	feedback_msg: autoDraw = False
+214.7417 	EXP 	image_stim: image = 'stimuli/blank.png'
+214.7417 	EXP 	text_stim: text = ' Adivasi'
+214.7417 	EXP 	trial_label_left: text = 'A = \nUpper Caste or \nHuman'
+214.7417 	EXP 	trial_label_right: text = 'L = \nLower Caste or \nNon-human'
+214.7417 	EXP 	fixation: autoDraw = True
+215.2248 	EXP 	fixation: autoDraw = False
+215.2248 	EXP 	image_stim: autoDraw = True
+215.2248 	EXP 	text_stim: autoDraw = True
+215.2248 	EXP 	button_left: autoDraw = True
+215.2248 	EXP 	trial_label_left: autoDraw = True
+215.2248 	EXP 	button_right: autoDraw = True
+215.2248 	EXP 	trial_label_right: autoDraw = True
+215.7950 	DATA 	Keypress: l
+215.8248 	EXP 	fixation: autoDraw = False
+215.8248 	EXP 	image_stim: autoDraw = False
+215.8248 	EXP 	text_stim: autoDraw = False
+215.8248 	EXP 	button_left: autoDraw = False
+215.8248 	EXP 	trial_label_left: autoDraw = False
+215.8248 	EXP 	button_right: autoDraw = False
+215.8248 	EXP 	trial_label_right: autoDraw = False
+215.8248 	EXP 	feedback_msg: text = ':)'
+215.8248 	EXP 	feedback_msg: autoDraw = True
+216.8095 	EXP 	New trial (rep=0, index=19): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', 'Wife'), ('CorrAns', 'a')])
+216.8414 	EXP 	feedback_msg: autoDraw = False
+216.8414 	EXP 	image_stim: image = 'stimuli/blank.png'
+216.8414 	EXP 	text_stim: text = 'Wife'
+216.8414 	EXP 	trial_label_left: text = 'A = \nUpper Caste or \nHuman'
+216.8414 	EXP 	trial_label_right: text = 'L = \nLower Caste or \nNon-human'
+216.8414 	EXP 	fixation: autoDraw = True
+217.3415 	EXP 	fixation: autoDraw = False
+217.3415 	EXP 	image_stim: autoDraw = True
+217.3415 	EXP 	text_stim: autoDraw = True
+217.3415 	EXP 	button_left: autoDraw = True
+217.3415 	EXP 	trial_label_left: autoDraw = True
+217.3415 	EXP 	button_right: autoDraw = True
+217.3415 	EXP 	trial_label_right: autoDraw = True
+218.1112 	DATA 	Keypress: a
+218.1413 	EXP 	fixation: autoDraw = False
+218.1413 	EXP 	image_stim: autoDraw = False
+218.1413 	EXP 	text_stim: autoDraw = False
+218.1413 	EXP 	button_left: autoDraw = False
+218.1413 	EXP 	trial_label_left: autoDraw = False
+218.1413 	EXP 	button_right: autoDraw = False
+218.1413 	EXP 	trial_label_right: autoDraw = False
+218.1413 	EXP 	feedback_msg: text = ':)'
+218.1413 	EXP 	feedback_msg: autoDraw = True
+219.1284 	EXP 	New trial (rep=0, index=3): OrderedDict([('conds_file', 'incong_train.xlsx'), ('label_left', 'A = \nLower Caste'), ('label_right', 'L = \nUpper Caste')])
+219.1936 	EXP 	feedback_msg: autoDraw = False
+219.1936 	EXP 	ready_label_L: text = 'A = \nLower Caste'
+219.1936 	EXP 	ready_label_R: text = 'L = \nUpper Caste'
+219.1936 	EXP 	main_ready_msg: autoDraw = True
+219.1936 	EXP 	button_L: autoDraw = True
+219.1936 	EXP 	ready_label_L: autoDraw = True
+219.1936 	EXP 	button_R: autoDraw = True
+219.1936 	EXP 	ready_label_R: autoDraw = True
+226.6609 	DATA 	Keypress: space
+226.7627 	EXP 	Imported incong_train.xlsx as conditions, 10 conditions, 3 params
+226.7643 	EXP 	Created sequence: random, trialTypes=10, nReps=1, seed=None
+226.7658 	EXP 	New trial (rep=0, index=0): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', ' Dalit'), ('CorrAns', 'a')])
+226.8265 	EXP 	main_ready_msg: autoDraw = False
+226.8265 	EXP 	button_L: autoDraw = False
+226.8265 	EXP 	ready_label_L: autoDraw = False
+226.8265 	EXP 	button_R: autoDraw = False
+226.8265 	EXP 	ready_label_R: autoDraw = False
+226.8265 	EXP 	image_stim: image = 'stimuli/blank.png'
+226.8265 	EXP 	text_stim: text = ' Dalit'
+226.8265 	EXP 	trial_label_left: text = 'A = \nLower Caste'
+226.8265 	EXP 	trial_label_right: text = 'L = \nUpper Caste'
+226.8265 	EXP 	fixation: autoDraw = True
+227.3258 	EXP 	fixation: autoDraw = False
+227.3258 	EXP 	image_stim: autoDraw = True
+227.3258 	EXP 	text_stim: autoDraw = True
+227.3258 	EXP 	button_left: autoDraw = True
+227.3258 	EXP 	trial_label_left: autoDraw = True
+227.3258 	EXP 	button_right: autoDraw = True
+227.3258 	EXP 	trial_label_right: autoDraw = True
+228.2406 	DATA 	Keypress: a
+228.2928 	EXP 	fixation: autoDraw = False
+228.2928 	EXP 	image_stim: autoDraw = False
+228.2928 	EXP 	text_stim: autoDraw = False
+228.2928 	EXP 	button_left: autoDraw = False
+228.2928 	EXP 	trial_label_left: autoDraw = False
+228.2928 	EXP 	button_right: autoDraw = False
+228.2928 	EXP 	trial_label_right: autoDraw = False
+228.2928 	EXP 	feedback_msg: text = ':)'
+228.2928 	EXP 	feedback_msg: autoDraw = True
+229.2947 	EXP 	New trial (rep=0, index=1): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', 'Neech Jaati'), ('CorrAns', 'a')])
+229.3425 	EXP 	feedback_msg: autoDraw = False
+229.3425 	EXP 	image_stim: image = 'stimuli/blank.png'
+229.3425 	EXP 	text_stim: text = 'Neech Jaati'
+229.3425 	EXP 	trial_label_left: text = 'A = \nLower Caste'
+229.3425 	EXP 	trial_label_right: text = 'L = \nUpper Caste'
+229.3425 	EXP 	fixation: autoDraw = True
+229.8253 	EXP 	fixation: autoDraw = False
+229.8253 	EXP 	image_stim: autoDraw = True
+229.8253 	EXP 	text_stim: autoDraw = True
+229.8253 	EXP 	button_left: autoDraw = True
+229.8253 	EXP 	trial_label_left: autoDraw = True
+229.8253 	EXP 	button_right: autoDraw = True
+229.8253 	EXP 	trial_label_right: autoDraw = True
+230.2961 	DATA 	Keypress: a
+230.3589 	EXP 	fixation: autoDraw = False
+230.3589 	EXP 	image_stim: autoDraw = False
+230.3589 	EXP 	text_stim: autoDraw = False
+230.3589 	EXP 	button_left: autoDraw = False
+230.3589 	EXP 	trial_label_left: autoDraw = False
+230.3589 	EXP 	button_right: autoDraw = False
+230.3589 	EXP 	trial_label_right: autoDraw = False
+230.3589 	EXP 	feedback_msg: text = ':)'
+230.3589 	EXP 	feedback_msg: autoDraw = True
+231.3442 	EXP 	New trial (rep=0, index=2): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', 'Brahmin'), ('CorrAns', 'l')])
+231.3752 	EXP 	feedback_msg: autoDraw = False
+231.3752 	EXP 	image_stim: image = 'stimuli/blank.png'
+231.3752 	EXP 	text_stim: text = 'Brahmin'
+231.3752 	EXP 	trial_label_left: text = 'A = \nLower Caste'
+231.3752 	EXP 	trial_label_right: text = 'L = \nUpper Caste'
+231.3752 	EXP 	fixation: autoDraw = True
+231.8755 	EXP 	fixation: autoDraw = False
+231.8755 	EXP 	image_stim: autoDraw = True
+231.8755 	EXP 	text_stim: autoDraw = True
+231.8755 	EXP 	button_left: autoDraw = True
+231.8755 	EXP 	trial_label_left: autoDraw = True
+231.8755 	EXP 	button_right: autoDraw = True
+231.8755 	EXP 	trial_label_right: autoDraw = True
+232.3779 	DATA 	Keypress: l
+232.4424 	EXP 	fixation: autoDraw = False
+232.4424 	EXP 	image_stim: autoDraw = False
+232.4424 	EXP 	text_stim: autoDraw = False
+232.4424 	EXP 	button_left: autoDraw = False
+232.4424 	EXP 	trial_label_left: autoDraw = False
+232.4424 	EXP 	button_right: autoDraw = False
+232.4424 	EXP 	trial_label_right: autoDraw = False
+232.4424 	EXP 	feedback_msg: text = ':)'
+232.4424 	EXP 	feedback_msg: autoDraw = True
+233.4273 	EXP 	New trial (rep=0, index=3): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', ' Kshatriya'), ('CorrAns', 'l')])
+233.4760 	EXP 	feedback_msg: autoDraw = False
+233.4760 	EXP 	image_stim: image = 'stimuli/blank.png'
+233.4760 	EXP 	text_stim: text = ' Kshatriya'
+233.4760 	EXP 	trial_label_left: text = 'A = \nLower Caste'
+233.4760 	EXP 	trial_label_right: text = 'L = \nUpper Caste'
+233.4760 	EXP 	fixation: autoDraw = True
+233.9584 	EXP 	fixation: autoDraw = False
+233.9584 	EXP 	image_stim: autoDraw = True
+233.9584 	EXP 	text_stim: autoDraw = True
+233.9584 	EXP 	button_left: autoDraw = True
+233.9584 	EXP 	trial_label_left: autoDraw = True
+233.9584 	EXP 	button_right: autoDraw = True
+233.9584 	EXP 	trial_label_right: autoDraw = True
+234.8624 	DATA 	Keypress: l
+234.8927 	EXP 	fixation: autoDraw = False
+234.8927 	EXP 	image_stim: autoDraw = False
+234.8927 	EXP 	text_stim: autoDraw = False
+234.8927 	EXP 	button_left: autoDraw = False
+234.8927 	EXP 	trial_label_left: autoDraw = False
+234.8927 	EXP 	button_right: autoDraw = False
+234.8927 	EXP 	trial_label_right: autoDraw = False
+234.8927 	EXP 	feedback_msg: text = ':)'
+234.8927 	EXP 	feedback_msg: autoDraw = True
+235.8768 	EXP 	New trial (rep=0, index=4): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', ' Avarna'), ('CorrAns', 'a')])
+235.9092 	EXP 	feedback_msg: autoDraw = False
+235.9092 	EXP 	image_stim: image = 'stimuli/blank.png'
+235.9092 	EXP 	text_stim: text = ' Avarna'
+235.9092 	EXP 	trial_label_left: text = 'A = \nLower Caste'
+235.9092 	EXP 	trial_label_right: text = 'L = \nUpper Caste'
+235.9092 	EXP 	fixation: autoDraw = True
+236.3925 	EXP 	fixation: autoDraw = False
+236.3925 	EXP 	image_stim: autoDraw = True
+236.3925 	EXP 	text_stim: autoDraw = True
+236.3925 	EXP 	button_left: autoDraw = True
+236.3925 	EXP 	trial_label_left: autoDraw = True
+236.3925 	EXP 	button_right: autoDraw = True
+236.3925 	EXP 	trial_label_right: autoDraw = True
+237.1293 	DATA 	Keypress: a
+237.1581 	EXP 	fixation: autoDraw = False
+237.1581 	EXP 	image_stim: autoDraw = False
+237.1581 	EXP 	text_stim: autoDraw = False
+237.1581 	EXP 	button_left: autoDraw = False
+237.1581 	EXP 	trial_label_left: autoDraw = False
+237.1581 	EXP 	button_right: autoDraw = False
+237.1581 	EXP 	trial_label_right: autoDraw = False
+237.1581 	EXP 	feedback_msg: text = ':)'
+237.1581 	EXP 	feedback_msg: autoDraw = True
+238.1435 	EXP 	New trial (rep=0, index=5): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', ' Oonch Jaati'), ('CorrAns', 'l')])
+238.1915 	EXP 	feedback_msg: autoDraw = False
+238.1915 	EXP 	image_stim: image = 'stimuli/blank.png'
+238.1915 	EXP 	text_stim: text = ' Oonch Jaati'
+238.1915 	EXP 	trial_label_left: text = 'A = \nLower Caste'
+238.1915 	EXP 	trial_label_right: text = 'L = \nUpper Caste'
+238.1915 	EXP 	fixation: autoDraw = True
+238.6752 	EXP 	fixation: autoDraw = False
+238.6752 	EXP 	image_stim: autoDraw = True
+238.6752 	EXP 	text_stim: autoDraw = True
+238.6752 	EXP 	button_left: autoDraw = True
+238.6752 	EXP 	trial_label_left: autoDraw = True
+238.6752 	EXP 	button_right: autoDraw = True
+238.6752 	EXP 	trial_label_right: autoDraw = True
+239.4450 	DATA 	Keypress: l
+239.4748 	EXP 	fixation: autoDraw = False
+239.4748 	EXP 	image_stim: autoDraw = False
+239.4748 	EXP 	text_stim: autoDraw = False
+239.4748 	EXP 	button_left: autoDraw = False
+239.4748 	EXP 	trial_label_left: autoDraw = False
+239.4748 	EXP 	button_right: autoDraw = False
+239.4748 	EXP 	trial_label_right: autoDraw = False
+239.4748 	EXP 	feedback_msg: text = ':)'
+239.4748 	EXP 	feedback_msg: autoDraw = True
+240.4589 	EXP 	New trial (rep=0, index=6): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', ' Adivasi'), ('CorrAns', 'a')])
+240.4917 	EXP 	feedback_msg: autoDraw = False
+240.4917 	EXP 	image_stim: image = 'stimuli/blank.png'
+240.4917 	EXP 	text_stim: text = ' Adivasi'
+240.4917 	EXP 	trial_label_left: text = 'A = \nLower Caste'
+240.4917 	EXP 	trial_label_right: text = 'L = \nUpper Caste'
+240.4917 	EXP 	fixation: autoDraw = True
+240.9919 	EXP 	fixation: autoDraw = False
+240.9919 	EXP 	image_stim: autoDraw = True
+240.9919 	EXP 	text_stim: autoDraw = True
+240.9919 	EXP 	button_left: autoDraw = True
+240.9919 	EXP 	trial_label_left: autoDraw = True
+240.9919 	EXP 	button_right: autoDraw = True
+240.9919 	EXP 	trial_label_right: autoDraw = True
+241.6059 	DATA 	Keypress: a
+241.6580 	EXP 	fixation: autoDraw = False
+241.6580 	EXP 	image_stim: autoDraw = False
+241.6580 	EXP 	text_stim: autoDraw = False
+241.6580 	EXP 	button_left: autoDraw = False
+241.6580 	EXP 	trial_label_left: autoDraw = False
+241.6580 	EXP 	button_right: autoDraw = False
+241.6580 	EXP 	trial_label_right: autoDraw = False
+241.6580 	EXP 	feedback_msg: text = ':)'
+241.6580 	EXP 	feedback_msg: autoDraw = True
+242.6424 	EXP 	New trial (rep=0, index=7): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', ' Pandit'), ('CorrAns', 'l')])
+242.6750 	EXP 	feedback_msg: autoDraw = False
+242.6750 	EXP 	image_stim: image = 'stimuli/blank.png'
+242.6750 	EXP 	text_stim: text = ' Pandit'
+242.6750 	EXP 	trial_label_left: text = 'A = \nLower Caste'
+242.6750 	EXP 	trial_label_right: text = 'L = \nUpper Caste'
+242.6750 	EXP 	fixation: autoDraw = True
+243.1750 	EXP 	fixation: autoDraw = False
+243.1750 	EXP 	image_stim: autoDraw = True
+243.1750 	EXP 	text_stim: autoDraw = True
+243.1750 	EXP 	button_left: autoDraw = True
+243.1750 	EXP 	trial_label_left: autoDraw = True
+243.1750 	EXP 	button_right: autoDraw = True
+243.1750 	EXP 	trial_label_right: autoDraw = True
+243.7220 	DATA 	Keypress: l
+243.7747 	EXP 	fixation: autoDraw = False
+243.7747 	EXP 	image_stim: autoDraw = False
+243.7747 	EXP 	text_stim: autoDraw = False
+243.7747 	EXP 	button_left: autoDraw = False
+243.7747 	EXP 	trial_label_left: autoDraw = False
+243.7747 	EXP 	button_right: autoDraw = False
+243.7747 	EXP 	trial_label_right: autoDraw = False
+243.7747 	EXP 	feedback_msg: text = ':)'
+243.7747 	EXP 	feedback_msg: autoDraw = True
+244.7591 	EXP 	New trial (rep=0, index=8): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', ' Savarna'), ('CorrAns', 'l')])
+244.7907 	EXP 	feedback_msg: autoDraw = False
+244.7907 	EXP 	image_stim: image = 'stimuli/blank.png'
+244.7907 	EXP 	text_stim: text = ' Savarna'
+244.7907 	EXP 	trial_label_left: text = 'A = \nLower Caste'
+244.7907 	EXP 	trial_label_right: text = 'L = \nUpper Caste'
+244.7907 	EXP 	fixation: autoDraw = True
+245.2909 	EXP 	fixation: autoDraw = False
+245.2909 	EXP 	image_stim: autoDraw = True
+245.2909 	EXP 	text_stim: autoDraw = True
+245.2909 	EXP 	button_left: autoDraw = True
+245.2909 	EXP 	trial_label_left: autoDraw = True
+245.2909 	EXP 	button_right: autoDraw = True
+245.2909 	EXP 	trial_label_right: autoDraw = True
+246.1945 	DATA 	Keypress: l
+246.2239 	EXP 	fixation: autoDraw = False
+246.2239 	EXP 	image_stim: autoDraw = False
+246.2239 	EXP 	text_stim: autoDraw = False
+246.2239 	EXP 	button_left: autoDraw = False
+246.2239 	EXP 	trial_label_left: autoDraw = False
+246.2239 	EXP 	button_right: autoDraw = False
+246.2239 	EXP 	trial_label_right: autoDraw = False
+246.2239 	EXP 	feedback_msg: text = ':)'
+246.2239 	EXP 	feedback_msg: autoDraw = True
+247.2264 	EXP 	New trial (rep=0, index=9): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', ' Harijan'), ('CorrAns', 'a')])
+247.2747 	EXP 	feedback_msg: autoDraw = False
+247.2747 	EXP 	image_stim: image = 'stimuli/blank.png'
+247.2747 	EXP 	text_stim: text = ' Harijan'
+247.2747 	EXP 	trial_label_left: text = 'A = \nLower Caste'
+247.2747 	EXP 	trial_label_right: text = 'L = \nUpper Caste'
+247.2747 	EXP 	fixation: autoDraw = True
+247.7573 	EXP 	fixation: autoDraw = False
+247.7573 	EXP 	image_stim: autoDraw = True
+247.7573 	EXP 	text_stim: autoDraw = True
+247.7573 	EXP 	button_left: autoDraw = True
+247.7573 	EXP 	trial_label_left: autoDraw = True
+247.7573 	EXP 	button_right: autoDraw = True
+247.7573 	EXP 	trial_label_right: autoDraw = True
+248.2270 	DATA 	Keypress: a
+248.2573 	EXP 	fixation: autoDraw = False
+248.2573 	EXP 	image_stim: autoDraw = False
+248.2573 	EXP 	text_stim: autoDraw = False
+248.2573 	EXP 	button_left: autoDraw = False
+248.2573 	EXP 	trial_label_left: autoDraw = False
+248.2573 	EXP 	button_right: autoDraw = False
+248.2573 	EXP 	trial_label_right: autoDraw = False
+248.2573 	EXP 	feedback_msg: text = ':)'
+248.2573 	EXP 	feedback_msg: autoDraw = True
+249.2437 	EXP 	New trial (rep=0, index=4): OrderedDict([('conds_file', 'incong_test.xlsx'), ('label_left', 'A = \nLower Caste or \nHuman'), ('label_right', 'L = \nUpper Caste or \nNon-human')])
+249.3081 	EXP 	feedback_msg: autoDraw = False
+249.3081 	EXP 	ready_label_L: text = 'A = \nLower Caste or \nHuman'
+249.3081 	EXP 	ready_label_R: text = 'L = \nUpper Caste or \nNon-human'
+249.3081 	EXP 	main_ready_msg: autoDraw = True
+249.3081 	EXP 	button_L: autoDraw = True
+249.3081 	EXP 	ready_label_L: autoDraw = True
+249.3081 	EXP 	button_R: autoDraw = True
+249.3081 	EXP 	ready_label_R: autoDraw = True
+255.7754 	DATA 	Keypress: space
+255.8529 	EXP 	Imported incong_test.xlsx as conditions, 20 conditions, 3 params
+255.8547 	EXP 	Created sequence: random, trialTypes=20, nReps=1, seed=None
+255.8562 	EXP 	New trial (rep=0, index=0): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', ' Avarna'), ('CorrAns', 'a')])
+255.9239 	EXP 	main_ready_msg: autoDraw = False
+255.9239 	EXP 	button_L: autoDraw = False
+255.9239 	EXP 	ready_label_L: autoDraw = False
+255.9239 	EXP 	button_R: autoDraw = False
+255.9239 	EXP 	ready_label_R: autoDraw = False
+255.9239 	EXP 	image_stim: image = 'stimuli/blank.png'
+255.9239 	EXP 	text_stim: text = ' Avarna'
+255.9239 	EXP 	trial_label_left: text = 'A = \nLower Caste or \nHuman'
+255.9239 	EXP 	trial_label_right: text = 'L = \nUpper Caste or \nNon-human'
+255.9239 	EXP 	fixation: autoDraw = True
+256.4239 	EXP 	fixation: autoDraw = False
+256.4239 	EXP 	image_stim: autoDraw = True
+256.4239 	EXP 	text_stim: autoDraw = True
+256.4239 	EXP 	button_left: autoDraw = True
+256.4239 	EXP 	trial_label_left: autoDraw = True
+256.4239 	EXP 	button_right: autoDraw = True
+256.4239 	EXP 	trial_label_right: autoDraw = True
+257.2599 	DATA 	Keypress: a
+257.3065 	EXP 	fixation: autoDraw = False
+257.3065 	EXP 	image_stim: autoDraw = False
+257.3065 	EXP 	text_stim: autoDraw = False
+257.3065 	EXP 	button_left: autoDraw = False
+257.3065 	EXP 	trial_label_left: autoDraw = False
+257.3065 	EXP 	button_right: autoDraw = False
+257.3065 	EXP 	trial_label_right: autoDraw = False
+257.3065 	EXP 	feedback_msg: text = ':)'
+257.3065 	EXP 	feedback_msg: autoDraw = True
+258.2923 	EXP 	New trial (rep=0, index=1): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', 'Children'), ('CorrAns', 'a')])
+258.3233 	EXP 	feedback_msg: autoDraw = False
+258.3233 	EXP 	image_stim: image = 'stimuli/blank.png'
+258.3233 	EXP 	text_stim: text = 'Children'
+258.3233 	EXP 	trial_label_left: text = 'A = \nLower Caste or \nHuman'
+258.3233 	EXP 	trial_label_right: text = 'L = \nUpper Caste or \nNon-human'
+258.3233 	EXP 	fixation: autoDraw = True
+258.8231 	EXP 	fixation: autoDraw = False
+258.8231 	EXP 	image_stim: autoDraw = True
+258.8231 	EXP 	text_stim: autoDraw = True
+258.8231 	EXP 	button_left: autoDraw = True
+258.8231 	EXP 	trial_label_left: autoDraw = True
+258.8231 	EXP 	button_right: autoDraw = True
+258.8231 	EXP 	trial_label_right: autoDraw = True
+259.4705 	DATA 	Keypress: a
+259.5234 	EXP 	fixation: autoDraw = False
+259.5234 	EXP 	image_stim: autoDraw = False
+259.5234 	EXP 	text_stim: autoDraw = False
+259.5234 	EXP 	button_left: autoDraw = False
+259.5234 	EXP 	trial_label_left: autoDraw = False
+259.5234 	EXP 	button_right: autoDraw = False
+259.5234 	EXP 	trial_label_right: autoDraw = False
+259.5234 	EXP 	feedback_msg: text = ':)'
+259.5234 	EXP 	feedback_msg: autoDraw = True
+260.5079 	EXP 	New trial (rep=0, index=2): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', 'Cattle'), ('CorrAns', 'l')])
+260.5405 	EXP 	feedback_msg: autoDraw = False
+260.5405 	EXP 	image_stim: image = 'stimuli/blank.png'
+260.5405 	EXP 	text_stim: text = 'Cattle'
+260.5405 	EXP 	trial_label_left: text = 'A = \nLower Caste or \nHuman'
+260.5405 	EXP 	trial_label_right: text = 'L = \nUpper Caste or \nNon-human'
+260.5405 	EXP 	fixation: autoDraw = True
+261.0400 	EXP 	fixation: autoDraw = False
+261.0400 	EXP 	image_stim: autoDraw = True
+261.0400 	EXP 	text_stim: autoDraw = True
+261.0400 	EXP 	button_left: autoDraw = True
+261.0400 	EXP 	trial_label_left: autoDraw = True
+261.0400 	EXP 	button_right: autoDraw = True
+261.0400 	EXP 	trial_label_right: autoDraw = True
+261.8439 	DATA 	Keypress: l
+261.8728 	EXP 	fixation: autoDraw = False
+261.8728 	EXP 	image_stim: autoDraw = False
+261.8728 	EXP 	text_stim: autoDraw = False
+261.8728 	EXP 	button_left: autoDraw = False
+261.8728 	EXP 	trial_label_left: autoDraw = False
+261.8728 	EXP 	button_right: autoDraw = False
+261.8728 	EXP 	trial_label_right: autoDraw = False
+261.8728 	EXP 	feedback_msg: text = ':)'
+261.8728 	EXP 	feedback_msg: autoDraw = True
+262.8588 	EXP 	New trial (rep=0, index=3): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', 'Rabbit'), ('CorrAns', 'l')])
+262.8902 	EXP 	feedback_msg: autoDraw = False
+262.8902 	EXP 	image_stim: image = 'stimuli/blank.png'
+262.8902 	EXP 	text_stim: text = 'Rabbit'
+262.8902 	EXP 	trial_label_left: text = 'A = \nLower Caste or \nHuman'
+262.8902 	EXP 	trial_label_right: text = 'L = \nUpper Caste or \nNon-human'
+262.8902 	EXP 	fixation: autoDraw = True
+263.4058 	EXP 	fixation: autoDraw = False
+263.4058 	EXP 	image_stim: autoDraw = True
+263.4058 	EXP 	text_stim: autoDraw = True
+263.4058 	EXP 	button_left: autoDraw = True
+263.4058 	EXP 	trial_label_left: autoDraw = True
+263.4058 	EXP 	button_right: autoDraw = True
+263.4058 	EXP 	trial_label_right: autoDraw = True
+264.0202 	DATA 	Keypress: l
+264.0733 	EXP 	fixation: autoDraw = False
+264.0733 	EXP 	image_stim: autoDraw = False
+264.0733 	EXP 	text_stim: autoDraw = False
+264.0733 	EXP 	button_left: autoDraw = False
+264.0733 	EXP 	trial_label_left: autoDraw = False
+264.0733 	EXP 	button_right: autoDraw = False
+264.0733 	EXP 	trial_label_right: autoDraw = False
+264.0733 	EXP 	feedback_msg: text = ':)'
+264.0733 	EXP 	feedback_msg: autoDraw = True
+265.0570 	EXP 	New trial (rep=0, index=4): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', ' Kshatriya'), ('CorrAns', 'l')])
+265.0893 	EXP 	feedback_msg: autoDraw = False
+265.0893 	EXP 	image_stim: image = 'stimuli/blank.png'
+265.0893 	EXP 	text_stim: text = ' Kshatriya'
+265.0893 	EXP 	trial_label_left: text = 'A = \nLower Caste or \nHuman'
+265.0893 	EXP 	trial_label_right: text = 'L = \nUpper Caste or \nNon-human'
+265.0893 	EXP 	fixation: autoDraw = True
+265.6059 	EXP 	fixation: autoDraw = False
+265.6059 	EXP 	image_stim: autoDraw = True
+265.6059 	EXP 	text_stim: autoDraw = True
+265.6059 	EXP 	button_left: autoDraw = True
+265.6059 	EXP 	trial_label_left: autoDraw = True
+265.6059 	EXP 	button_right: autoDraw = True
+265.6059 	EXP 	trial_label_right: autoDraw = True
+266.3759 	DATA 	Keypress: a
+266.4227 	EXP 	fixation: autoDraw = False
+266.4227 	EXP 	image_stim: autoDraw = False
+266.4227 	EXP 	text_stim: autoDraw = False
+266.4227 	EXP 	button_left: autoDraw = False
+266.4227 	EXP 	trial_label_left: autoDraw = False
+266.4227 	EXP 	button_right: autoDraw = False
+266.4227 	EXP 	trial_label_right: autoDraw = False
+266.4227 	EXP 	feedback_msg: text = 'Oops'
+266.4227 	EXP 	feedback_msg: autoDraw = True
+267.3912 	EXP 	New trial (rep=0, index=5): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', 'Wife'), ('CorrAns', 'a')])
+267.4225 	EXP 	feedback_msg: autoDraw = False
+267.4225 	EXP 	image_stim: image = 'stimuli/blank.png'
+267.4225 	EXP 	text_stim: text = 'Wife'
+267.4225 	EXP 	trial_label_left: text = 'A = \nLower Caste or \nHuman'
+267.4225 	EXP 	trial_label_right: text = 'L = \nUpper Caste or \nNon-human'
+267.4225 	EXP 	fixation: autoDraw = True
+267.9227 	EXP 	fixation: autoDraw = False
+267.9227 	EXP 	image_stim: autoDraw = True
+267.9227 	EXP 	text_stim: autoDraw = True
+267.9227 	EXP 	button_left: autoDraw = True
+267.9227 	EXP 	trial_label_left: autoDraw = True
+267.9227 	EXP 	button_right: autoDraw = True
+267.9227 	EXP 	trial_label_right: autoDraw = True
+269.1035 	DATA 	Keypress: a
+269.1731 	EXP 	fixation: autoDraw = False
+269.1731 	EXP 	image_stim: autoDraw = False
+269.1731 	EXP 	text_stim: autoDraw = False
+269.1731 	EXP 	button_left: autoDraw = False
+269.1731 	EXP 	trial_label_left: autoDraw = False
+269.1731 	EXP 	button_right: autoDraw = False
+269.1731 	EXP 	trial_label_right: autoDraw = False
+269.1731 	EXP 	feedback_msg: text = ':)'
+269.1731 	EXP 	feedback_msg: autoDraw = True
+270.1407 	EXP 	New trial (rep=0, index=6): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', ' Savarna'), ('CorrAns', 'l')])
+270.1890 	EXP 	feedback_msg: autoDraw = False
+270.1890 	EXP 	image_stim: image = 'stimuli/blank.png'
+270.1890 	EXP 	text_stim: text = ' Savarna'
+270.1890 	EXP 	trial_label_left: text = 'A = \nLower Caste or \nHuman'
+270.1890 	EXP 	trial_label_right: text = 'L = \nUpper Caste or \nNon-human'
+270.1890 	EXP 	fixation: autoDraw = True
+270.6728 	EXP 	fixation: autoDraw = False
+270.6728 	EXP 	image_stim: autoDraw = True
+270.6728 	EXP 	text_stim: autoDraw = True
+270.6728 	EXP 	button_left: autoDraw = True
+270.6728 	EXP 	trial_label_left: autoDraw = True
+270.6728 	EXP 	button_right: autoDraw = True
+270.6728 	EXP 	trial_label_right: autoDraw = True
+271.8752 	DATA 	Keypress: l
+271.9062 	EXP 	fixation: autoDraw = False
+271.9062 	EXP 	image_stim: autoDraw = False
+271.9062 	EXP 	text_stim: autoDraw = False
+271.9062 	EXP 	button_left: autoDraw = False
+271.9062 	EXP 	trial_label_left: autoDraw = False
+271.9062 	EXP 	button_right: autoDraw = False
+271.9062 	EXP 	trial_label_right: autoDraw = False
+271.9062 	EXP 	feedback_msg: text = ':)'
+271.9062 	EXP 	feedback_msg: autoDraw = True
+272.9076 	EXP 	New trial (rep=0, index=7): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', ' Dalit'), ('CorrAns', 'a')])
+272.9388 	EXP 	feedback_msg: autoDraw = False
+272.9388 	EXP 	image_stim: image = 'stimuli/blank.png'
+272.9388 	EXP 	text_stim: text = ' Dalit'
+272.9388 	EXP 	trial_label_left: text = 'A = \nLower Caste or \nHuman'
+272.9388 	EXP 	trial_label_right: text = 'L = \nUpper Caste or \nNon-human'
+272.9388 	EXP 	fixation: autoDraw = True
+273.4383 	EXP 	fixation: autoDraw = False
+273.4383 	EXP 	image_stim: autoDraw = True
+273.4383 	EXP 	text_stim: autoDraw = True
+273.4383 	EXP 	button_left: autoDraw = True
+273.4383 	EXP 	trial_label_left: autoDraw = True
+273.4383 	EXP 	button_right: autoDraw = True
+273.4383 	EXP 	trial_label_right: autoDraw = True
+274.0543 	DATA 	Keypress: a
+274.1053 	EXP 	fixation: autoDraw = False
+274.1053 	EXP 	image_stim: autoDraw = False
+274.1053 	EXP 	text_stim: autoDraw = False
+274.1053 	EXP 	button_left: autoDraw = False
+274.1053 	EXP 	trial_label_left: autoDraw = False
+274.1053 	EXP 	button_right: autoDraw = False
+274.1053 	EXP 	trial_label_right: autoDraw = False
+274.1053 	EXP 	feedback_msg: text = ':)'
+274.1053 	EXP 	feedback_msg: autoDraw = True
+275.0907 	EXP 	New trial (rep=0, index=8): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', 'Man'), ('CorrAns', 'a')])
+275.1216 	EXP 	feedback_msg: autoDraw = False
+275.1216 	EXP 	image_stim: image = 'stimuli/blank.png'
+275.1216 	EXP 	text_stim: text = 'Man'
+275.1216 	EXP 	trial_label_left: text = 'A = \nLower Caste or \nHuman'
+275.1216 	EXP 	trial_label_right: text = 'L = \nUpper Caste or \nNon-human'
+275.1216 	EXP 	fixation: autoDraw = True
+275.6216 	EXP 	fixation: autoDraw = False
+275.6216 	EXP 	image_stim: autoDraw = True
+275.6216 	EXP 	text_stim: autoDraw = True
+275.6216 	EXP 	button_left: autoDraw = True
+275.6216 	EXP 	trial_label_left: autoDraw = True
+275.6216 	EXP 	button_right: autoDraw = True
+275.6216 	EXP 	trial_label_right: autoDraw = True
+276.2584 	DATA 	Keypress: a
+276.2893 	EXP 	fixation: autoDraw = False
+276.2893 	EXP 	image_stim: autoDraw = False
+276.2893 	EXP 	text_stim: autoDraw = False
+276.2893 	EXP 	button_left: autoDraw = False
+276.2893 	EXP 	trial_label_left: autoDraw = False
+276.2893 	EXP 	button_right: autoDraw = False
+276.2893 	EXP 	trial_label_right: autoDraw = False
+276.2893 	EXP 	feedback_msg: text = ':)'
+276.2893 	EXP 	feedback_msg: autoDraw = True
+277.2741 	EXP 	New trial (rep=0, index=9): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', 'Citizen'), ('CorrAns', 'a')])
+277.3221 	EXP 	feedback_msg: autoDraw = False
+277.3221 	EXP 	image_stim: image = 'stimuli/blank.png'
+277.3221 	EXP 	text_stim: text = 'Citizen'
+277.3221 	EXP 	trial_label_left: text = 'A = \nLower Caste or \nHuman'
+277.3221 	EXP 	trial_label_right: text = 'L = \nUpper Caste or \nNon-human'
+277.3221 	EXP 	fixation: autoDraw = True
+277.8045 	EXP 	fixation: autoDraw = False
+277.8045 	EXP 	image_stim: autoDraw = True
+277.8045 	EXP 	text_stim: autoDraw = True
+277.8045 	EXP 	button_left: autoDraw = True
+277.8045 	EXP 	trial_label_left: autoDraw = True
+277.8045 	EXP 	button_right: autoDraw = True
+277.8045 	EXP 	trial_label_right: autoDraw = True
+278.3199 	DATA 	Keypress: a
+278.3718 	EXP 	fixation: autoDraw = False
+278.3718 	EXP 	image_stim: autoDraw = False
+278.3718 	EXP 	text_stim: autoDraw = False
+278.3718 	EXP 	button_left: autoDraw = False
+278.3718 	EXP 	trial_label_left: autoDraw = False
+278.3718 	EXP 	button_right: autoDraw = False
+278.3718 	EXP 	trial_label_right: autoDraw = False
+278.3718 	EXP 	feedback_msg: text = ':)'
+278.3718 	EXP 	feedback_msg: autoDraw = True
+279.3567 	EXP 	New trial (rep=0, index=10): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', ' Harijan'), ('CorrAns', 'a')])
+279.3882 	EXP 	feedback_msg: autoDraw = False
+279.3882 	EXP 	image_stim: image = 'stimuli/blank.png'
+279.3882 	EXP 	text_stim: text = ' Harijan'
+279.3882 	EXP 	trial_label_left: text = 'A = \nLower Caste or \nHuman'
+279.3882 	EXP 	trial_label_right: text = 'L = \nUpper Caste or \nNon-human'
+279.3882 	EXP 	fixation: autoDraw = True
+279.8880 	EXP 	fixation: autoDraw = False
+279.8880 	EXP 	image_stim: autoDraw = True
+279.8880 	EXP 	text_stim: autoDraw = True
+279.8880 	EXP 	button_left: autoDraw = True
+279.8880 	EXP 	trial_label_left: autoDraw = True
+279.8880 	EXP 	button_right: autoDraw = True
+279.8880 	EXP 	trial_label_right: autoDraw = True
+280.3585 	DATA 	Keypress: a
+280.3880 	EXP 	fixation: autoDraw = False
+280.3880 	EXP 	image_stim: autoDraw = False
+280.3880 	EXP 	text_stim: autoDraw = False
+280.3880 	EXP 	button_left: autoDraw = False
+280.3880 	EXP 	trial_label_left: autoDraw = False
+280.3880 	EXP 	button_right: autoDraw = False
+280.3880 	EXP 	trial_label_right: autoDraw = False
+280.3880 	EXP 	feedback_msg: text = ':)'
+280.3880 	EXP 	feedback_msg: autoDraw = True
+281.3902 	EXP 	New trial (rep=0, index=11): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', ' Oonch Jaati'), ('CorrAns', 'l')])
+281.4379 	EXP 	feedback_msg: autoDraw = False
+281.4379 	EXP 	image_stim: image = 'stimuli/blank.png'
+281.4379 	EXP 	text_stim: text = ' Oonch Jaati'
+281.4379 	EXP 	trial_label_left: text = 'A = \nLower Caste or \nHuman'
+281.4379 	EXP 	trial_label_right: text = 'L = \nUpper Caste or \nNon-human'
+281.4379 	EXP 	fixation: autoDraw = True
+281.9378 	EXP 	fixation: autoDraw = False
+281.9378 	EXP 	image_stim: autoDraw = True
+281.9378 	EXP 	text_stim: autoDraw = True
+281.9378 	EXP 	button_left: autoDraw = True
+281.9378 	EXP 	trial_label_left: autoDraw = True
+281.9378 	EXP 	button_right: autoDraw = True
+281.9378 	EXP 	trial_label_right: autoDraw = True
+282.6091 	DATA 	Keypress: l
+282.6386 	EXP 	fixation: autoDraw = False
+282.6386 	EXP 	image_stim: autoDraw = False
+282.6386 	EXP 	text_stim: autoDraw = False
+282.6386 	EXP 	button_left: autoDraw = False
+282.6386 	EXP 	trial_label_left: autoDraw = False
+282.6386 	EXP 	button_right: autoDraw = False
+282.6386 	EXP 	trial_label_right: autoDraw = False
+282.6386 	EXP 	feedback_msg: text = ':)'
+282.6386 	EXP 	feedback_msg: autoDraw = True
+283.6232 	EXP 	New trial (rep=0, index=12): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', 'Neech Jaati'), ('CorrAns', 'a')])
+283.6708 	EXP 	feedback_msg: autoDraw = False
+283.6708 	EXP 	image_stim: image = 'stimuli/blank.png'
+283.6708 	EXP 	text_stim: text = 'Neech Jaati'
+283.6708 	EXP 	trial_label_left: text = 'A = \nLower Caste or \nHuman'
+283.6708 	EXP 	trial_label_right: text = 'L = \nUpper Caste or \nNon-human'
+283.6708 	EXP 	fixation: autoDraw = True
+284.1549 	EXP 	fixation: autoDraw = False
+284.1549 	EXP 	image_stim: autoDraw = True
+284.1549 	EXP 	text_stim: autoDraw = True
+284.1549 	EXP 	button_left: autoDraw = True
+284.1549 	EXP 	trial_label_left: autoDraw = True
+284.1549 	EXP 	button_right: autoDraw = True
+284.1549 	EXP 	trial_label_right: autoDraw = True
+284.7578 	DATA 	Keypress: a
+284.7881 	EXP 	fixation: autoDraw = False
+284.7881 	EXP 	image_stim: autoDraw = False
+284.7881 	EXP 	text_stim: autoDraw = False
+284.7881 	EXP 	button_left: autoDraw = False
+284.7881 	EXP 	trial_label_left: autoDraw = False
+284.7881 	EXP 	button_right: autoDraw = False
+284.7881 	EXP 	trial_label_right: autoDraw = False
+284.7881 	EXP 	feedback_msg: text = ':)'
+284.7881 	EXP 	feedback_msg: autoDraw = True
+285.7728 	EXP 	New trial (rep=0, index=13): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', 'Cub'), ('CorrAns', 'l')])
+285.8053 	EXP 	feedback_msg: autoDraw = False
+285.8053 	EXP 	image_stim: image = 'stimuli/blank.png'
+285.8053 	EXP 	text_stim: text = 'Cub'
+285.8053 	EXP 	trial_label_left: text = 'A = \nLower Caste or \nHuman'
+285.8053 	EXP 	trial_label_right: text = 'L = \nUpper Caste or \nNon-human'
+285.8053 	EXP 	fixation: autoDraw = True
+286.3044 	EXP 	fixation: autoDraw = False
+286.3044 	EXP 	image_stim: autoDraw = True
+286.3044 	EXP 	text_stim: autoDraw = True
+286.3044 	EXP 	button_left: autoDraw = True
+286.3044 	EXP 	trial_label_left: autoDraw = True
+286.3044 	EXP 	button_right: autoDraw = True
+286.3044 	EXP 	trial_label_right: autoDraw = True
+287.6515 	DATA 	Keypress: l
+287.7046 	EXP 	fixation: autoDraw = False
+287.7046 	EXP 	image_stim: autoDraw = False
+287.7046 	EXP 	text_stim: autoDraw = False
+287.7046 	EXP 	button_left: autoDraw = False
+287.7046 	EXP 	trial_label_left: autoDraw = False
+287.7046 	EXP 	button_right: autoDraw = False
+287.7046 	EXP 	trial_label_right: autoDraw = False
+287.7046 	EXP 	feedback_msg: text = ':)'
+287.7046 	EXP 	feedback_msg: autoDraw = True
+288.6889 	EXP 	New trial (rep=0, index=14): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', ' Adivasi'), ('CorrAns', 'a')])
+288.7207 	EXP 	feedback_msg: autoDraw = False
+288.7207 	EXP 	image_stim: image = 'stimuli/blank.png'
+288.7207 	EXP 	text_stim: text = ' Adivasi'
+288.7207 	EXP 	trial_label_left: text = 'A = \nLower Caste or \nHuman'
+288.7207 	EXP 	trial_label_right: text = 'L = \nUpper Caste or \nNon-human'
+288.7207 	EXP 	fixation: autoDraw = True
+289.2044 	EXP 	fixation: autoDraw = False
+289.2044 	EXP 	image_stim: autoDraw = True
+289.2044 	EXP 	text_stim: autoDraw = True
+289.2044 	EXP 	button_left: autoDraw = True
+289.2044 	EXP 	trial_label_left: autoDraw = True
+289.2044 	EXP 	button_right: autoDraw = True
+289.2044 	EXP 	trial_label_right: autoDraw = True
+290.1407 	DATA 	Keypress: a
+290.1708 	EXP 	fixation: autoDraw = False
+290.1708 	EXP 	image_stim: autoDraw = False
+290.1708 	EXP 	text_stim: autoDraw = False
+290.1708 	EXP 	button_left: autoDraw = False
+290.1708 	EXP 	trial_label_left: autoDraw = False
+290.1708 	EXP 	button_right: autoDraw = False
+290.1708 	EXP 	trial_label_right: autoDraw = False
+290.1708 	EXP 	feedback_msg: text = ':)'
+290.1708 	EXP 	feedback_msg: autoDraw = True
+291.1559 	EXP 	New trial (rep=0, index=15): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', 'Fox'), ('CorrAns', 'l')])
+291.1869 	EXP 	feedback_msg: autoDraw = False
+291.1869 	EXP 	image_stim: image = 'stimuli/blank.png'
+291.1869 	EXP 	text_stim: text = 'Fox'
+291.1869 	EXP 	trial_label_left: text = 'A = \nLower Caste or \nHuman'
+291.1869 	EXP 	trial_label_right: text = 'L = \nUpper Caste or \nNon-human'
+291.1869 	EXP 	fixation: autoDraw = True
+291.6871 	EXP 	fixation: autoDraw = False
+291.6871 	EXP 	image_stim: autoDraw = True
+291.6871 	EXP 	text_stim: autoDraw = True
+291.6871 	EXP 	button_left: autoDraw = True
+291.6871 	EXP 	trial_label_left: autoDraw = True
+291.6871 	EXP 	button_right: autoDraw = True
+291.6871 	EXP 	trial_label_right: autoDraw = True
+292.4240 	DATA 	Keypress: l
+292.4540 	EXP 	fixation: autoDraw = False
+292.4540 	EXP 	image_stim: autoDraw = False
+292.4540 	EXP 	text_stim: autoDraw = False
+292.4540 	EXP 	button_left: autoDraw = False
+292.4540 	EXP 	trial_label_left: autoDraw = False
+292.4540 	EXP 	button_right: autoDraw = False
+292.4540 	EXP 	trial_label_right: autoDraw = False
+292.4540 	EXP 	feedback_msg: text = ':)'
+292.4540 	EXP 	feedback_msg: autoDraw = True
+293.4405 	EXP 	New trial (rep=0, index=16): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', 'Rodent'), ('CorrAns', 'l')])
+293.4874 	EXP 	feedback_msg: autoDraw = False
+293.4874 	EXP 	image_stim: image = 'stimuli/blank.png'
+293.4874 	EXP 	text_stim: text = 'Rodent'
+293.4874 	EXP 	trial_label_left: text = 'A = \nLower Caste or \nHuman'
+293.4874 	EXP 	trial_label_right: text = 'L = \nUpper Caste or \nNon-human'
+293.4874 	EXP 	fixation: autoDraw = True
+293.9701 	EXP 	fixation: autoDraw = False
+293.9701 	EXP 	image_stim: autoDraw = True
+293.9701 	EXP 	text_stim: autoDraw = True
+293.9701 	EXP 	button_left: autoDraw = True
+293.9701 	EXP 	trial_label_left: autoDraw = True
+293.9701 	EXP 	button_right: autoDraw = True
+293.9701 	EXP 	trial_label_right: autoDraw = True
+295.2174 	DATA 	Keypress: l
+295.2705 	EXP 	fixation: autoDraw = False
+295.2705 	EXP 	image_stim: autoDraw = False
+295.2705 	EXP 	text_stim: autoDraw = False
+295.2705 	EXP 	button_left: autoDraw = False
+295.2705 	EXP 	trial_label_left: autoDraw = False
+295.2705 	EXP 	button_right: autoDraw = False
+295.2705 	EXP 	trial_label_right: autoDraw = False
+295.2705 	EXP 	feedback_msg: text = ':)'
+295.2705 	EXP 	feedback_msg: autoDraw = True
+296.2558 	EXP 	New trial (rep=0, index=17): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', 'Woman'), ('CorrAns', 'a')])
+296.2867 	EXP 	feedback_msg: autoDraw = False
+296.2867 	EXP 	image_stim: image = 'stimuli/blank.png'
+296.2867 	EXP 	text_stim: text = 'Woman'
+296.2867 	EXP 	trial_label_left: text = 'A = \nLower Caste or \nHuman'
+296.2867 	EXP 	trial_label_right: text = 'L = \nUpper Caste or \nNon-human'
+296.2867 	EXP 	fixation: autoDraw = True
+296.7865 	EXP 	fixation: autoDraw = False
+296.7865 	EXP 	image_stim: autoDraw = True
+296.7865 	EXP 	text_stim: autoDraw = True
+296.7865 	EXP 	button_left: autoDraw = True
+296.7865 	EXP 	trial_label_left: autoDraw = True
+296.7865 	EXP 	button_right: autoDraw = True
+296.7865 	EXP 	trial_label_right: autoDraw = True
+297.4574 	DATA 	Keypress: a
+297.4874 	EXP 	fixation: autoDraw = False
+297.4874 	EXP 	image_stim: autoDraw = False
+297.4874 	EXP 	text_stim: autoDraw = False
+297.4874 	EXP 	button_left: autoDraw = False
+297.4874 	EXP 	trial_label_left: autoDraw = False
+297.4874 	EXP 	button_right: autoDraw = False
+297.4874 	EXP 	trial_label_right: autoDraw = False
+297.4874 	EXP 	feedback_msg: text = ':)'
+297.4874 	EXP 	feedback_msg: autoDraw = True
+298.4884 	EXP 	New trial (rep=0, index=18): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', ' Pandit'), ('CorrAns', 'l')])
+298.5370 	EXP 	feedback_msg: autoDraw = False
+298.5370 	EXP 	image_stim: image = 'stimuli/blank.png'
+298.5370 	EXP 	text_stim: text = ' Pandit'
+298.5370 	EXP 	trial_label_left: text = 'A = \nLower Caste or \nHuman'
+298.5370 	EXP 	trial_label_right: text = 'L = \nUpper Caste or \nNon-human'
+298.5370 	EXP 	fixation: autoDraw = True
+299.0198 	EXP 	fixation: autoDraw = False
+299.0198 	EXP 	image_stim: autoDraw = True
+299.0198 	EXP 	text_stim: autoDraw = True
+299.0198 	EXP 	button_left: autoDraw = True
+299.0198 	EXP 	trial_label_left: autoDraw = True
+299.0198 	EXP 	button_right: autoDraw = True
+299.0198 	EXP 	trial_label_right: autoDraw = True
+299.9681 	DATA 	Keypress: l
+300.0197 	EXP 	fixation: autoDraw = False
+300.0197 	EXP 	image_stim: autoDraw = False
+300.0197 	EXP 	text_stim: autoDraw = False
+300.0197 	EXP 	button_left: autoDraw = False
+300.0197 	EXP 	trial_label_left: autoDraw = False
+300.0197 	EXP 	button_right: autoDraw = False
+300.0197 	EXP 	trial_label_right: autoDraw = False
+300.0197 	EXP 	feedback_msg: text = ':)'
+300.0197 	EXP 	feedback_msg: autoDraw = True
+301.0055 	EXP 	New trial (rep=0, index=19): OrderedDict([('stimImage', 'stimuli/blank.png'), ('stimWord', 'Brahmin'), ('CorrAns', 'l')])
+301.0534 	EXP 	feedback_msg: autoDraw = False
+301.0534 	EXP 	image_stim: image = 'stimuli/blank.png'
+301.0534 	EXP 	text_stim: text = 'Brahmin'
+301.0534 	EXP 	trial_label_left: text = 'A = \nLower Caste or \nHuman'
+301.0534 	EXP 	trial_label_right: text = 'L = \nUpper Caste or \nNon-human'
+301.0534 	EXP 	fixation: autoDraw = True
+301.5195 	EXP 	fixation: autoDraw = False
+301.5195 	EXP 	image_stim: autoDraw = True
+301.5195 	EXP 	text_stim: autoDraw = True
+301.5195 	EXP 	button_left: autoDraw = True
+301.5195 	EXP 	trial_label_left: autoDraw = True
+301.5195 	EXP 	button_right: autoDraw = True
+301.5195 	EXP 	trial_label_right: autoDraw = True
+302.2685 	DATA 	Keypress: l
+302.3199 	EXP 	fixation: autoDraw = False
+302.3199 	EXP 	image_stim: autoDraw = False
+302.3199 	EXP 	text_stim: autoDraw = False
+302.3199 	EXP 	button_left: autoDraw = False
+302.3199 	EXP 	trial_label_left: autoDraw = False
+302.3199 	EXP 	button_right: autoDraw = False
+302.3199 	EXP 	trial_label_right: autoDraw = False
+302.3199 	EXP 	feedback_msg: text = ':)'
+302.3199 	EXP 	feedback_msg: autoDraw = True
+303.3365 	EXP 	feedback_msg: autoDraw = False
+303.3365 	EXP 	thanks_text: autoDraw = True
+368.0884 	DATA 	Keypress: escape
+368.7313 	EXP 	window1: mouseVisible = True
