@@ -847,3 +847,55 @@ for thisBlock in blocks:
         routineTimer.reset()
         
        
+ # -------Run Routine "feedback"-------
+        while continueRoutine and routineTimer.getTime() > 0:
+            # get current time
+            t = feedbackClock.getTime()
+            tThisFlip = win.getFutureFlipTime(clock=feedbackClock)
+            tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+            frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+            # update/draw components on each frame
+            
+            # *feedback_msg* updates
+            if feedback_msg.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                feedback_msg.frameNStart = frameN  # exact frame index
+                feedback_msg.tStart = t  # local t and not account for scr refresh
+                feedback_msg.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(feedback_msg, 'tStartRefresh')  # time at next scr refresh
+                feedback_msg.setAutoDraw(True)
+            if feedback_msg.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > feedback_msg.tStartRefresh + 1-frameTolerance:
+                    # keep track of stop time/frame for later
+                    feedback_msg.tStop = t  # not accounting for scr refresh
+                    feedback_msg.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(feedback_msg, 'tStopRefresh')  # time at next scr refresh
+                    feedback_msg.setAutoDraw(False)
+            
+            # check for quit (typically the Esc key)
+            if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+                core.quit()
+            
+            # check if all components have finished
+            if not continueRoutine:  # a component has requested a forced-end of Routine
+                break
+            continueRoutine = False  # will revert to True if at least one component still running
+            for thisComponent in feedbackComponents:
+                if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                    continueRoutine = True
+                    break  # at least one component has not yet finished
+            
+            # refresh the screen
+            if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+                win.flip()
+        
+        # -------Ending Routine "feedback"-------
+        for thisComponent in feedbackComponents:
+            if hasattr(thisComponent, "setAutoDraw"):
+                thisComponent.setAutoDraw(False)
+        thisExp.nextEntry()
+        
+    # completed 1 repeats of 'trials'
+    
+# completed 1 repeats of 'blocks'
