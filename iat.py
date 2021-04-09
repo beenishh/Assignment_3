@@ -254,3 +254,27 @@ for thisInstruct_page in instruct_pages:
         for paramName in thisInstruct_page:
             exec('{} = thisInstruct_page[paramName]'.format(paramName))
     
+ # Prepare to start Routine "instructions"
+    continueRoutine = True
+    # update component parameters for each repeat
+    instructs_text.setText(instruct_text)
+    instruct_done.keys = []
+    instruct_done.rt = []
+    _instruct_done_allKeys = []
+    # setup some python lists for storing info about the instr_done_touch
+    instr_done_touch.clicked_name = []
+    gotValidClick = False  # until a click is received
+    # keep track of which components have finished
+    instructionsComponents = [instructs_text, instruct_done, instr_done_button, instr_done_label, instr_done_touch]
+    for thisComponent in instructionsComponents:
+        thisComponent.tStart = None
+        thisComponent.tStop = None
+        thisComponent.tStartRefresh = None
+        thisComponent.tStopRefresh = None
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    # reset timers
+    t = 0
+    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+    instructionsClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+    frameN = -1
