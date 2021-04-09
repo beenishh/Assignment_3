@@ -845,6 +845,31 @@ for thisBlock in blocks:
         trials.addData('button_right.stopped', button_right.tStopRefresh)
         # the Routine "trial" was not non-slip safe, so reset the non-slip timer
         routineTimer.reset()
+     
+      # ------Prepare to start Routine "feedback"-------
+        continueRoutine = True
+        routineTimer.add(1.000000)
+        # update component parameters for each repeat
+        
+        if corr==0:
+            msg="Oops"
+        else:
+            msg=":)"
+        feedback_msg.setText(msg)
+        # keep track of which components have finished
+        feedbackComponents = [feedback_msg]
+        for thisComponent in feedbackComponents:
+            thisComponent.tStart = None
+            thisComponent.tStop = None
+            thisComponent.tStartRefresh = None
+            thisComponent.tStopRefresh = None
+            if hasattr(thisComponent, 'status'):
+                thisComponent.status = NOT_STARTED
+        # reset timers
+        t = 0
+        _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+        feedbackClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+        frameN = -1
         
        
  # -------Run Routine "feedback"-------
