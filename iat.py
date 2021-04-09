@@ -924,3 +924,22 @@ for thisBlock in blocks:
     # completed 1 repeats of 'trials'
     
 # completed 1 repeats of 'blocks'
+
+# ------Prepare to start Routine "end_thanks"-------
+continueRoutine = True
+# update component parameters for each repeat
+# keep track of which components have finished
+end_thanksComponents = [thanks_text]
+for thisComponent in end_thanksComponents:
+    thisComponent.tStart = None
+    thisComponent.tStop = None
+    thisComponent.tStartRefresh = None
+    thisComponent.tStopRefresh = None
+    if hasattr(thisComponent, 'status'):
+        thisComponent.status = NOT_STARTED
+# reset timers
+t = 0
+_timeToFirstFrame = win.getFutureFlipTime(clock="now")
+end_thanksClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+frameN = -1
+
