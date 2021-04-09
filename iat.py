@@ -377,3 +377,54 @@ for thisInstruct_page in instruct_pages:
         if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
             win.flip()
     
+ # -------Ending Routine "instructions"-------
+    for thisComponent in instructionsComponents:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    instruct_pages.addData('instr_done_button.started', instr_done_button.tStartRefresh)
+    instruct_pages.addData('instr_done_button.stopped', instr_done_button.tStopRefresh)
+    instruct_pages.addData('instr_done_label.started', instr_done_label.tStartRefresh)
+    instruct_pages.addData('instr_done_label.stopped', instr_done_label.tStopRefresh)
+    # store data for instruct_pages (TrialHandler)
+    x, y = instr_done_touch.getPos()
+    buttons = instr_done_touch.getPressed()
+    if sum(buttons):
+        # check if the mouse was inside our 'clickable' objects
+        gotValidClick = False
+        for obj in [instr_done_button]:
+            if obj.contains(instr_done_touch):
+                gotValidClick = True
+                instr_done_touch.clicked_name.append(obj.name)
+    instruct_pages.addData('instr_done_touch.x', x)
+    instruct_pages.addData('instr_done_touch.y', y)
+    instruct_pages.addData('instr_done_touch.leftButton', buttons[0])
+    instruct_pages.addData('instr_done_touch.midButton', buttons[1])
+    instruct_pages.addData('instr_done_touch.rightButton', buttons[2])
+    if len(instr_done_touch.clicked_name):
+        instruct_pages.addData('instr_done_touch.clicked_name', instr_done_touch.clicked_name[0])
+    instruct_pages.addData('instr_done_touch.started', instr_done_touch.tStart)
+    instruct_pages.addData('instr_done_touch.stopped', instr_done_touch.tStop)
+    # the Routine "instructions" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset()
+# completed 1 repeats of 'instruct_pages'
+
+
+# set up handler to look after randomisation of conditions etc
+blocks = data.TrialHandler(nReps=1, method='sequential', 
+    extraInfo=expInfo, originPath=-1,
+    trialList=data.importConditions(blocks_file),
+    seed=None, name='blocks')
+thisExp.addLoop(blocks)  # add the loop to the experiment
+thisBlock = blocks.trialList[0]  # so we can initialise stimuli with some values
+# abbreviate parameter names if possible (e.g. rgb = thisBlock.rgb)
+if thisBlock != None:
+    for paramName in thisBlock:
+        exec('{} = thisBlock[paramName]'.format(paramName))
+
+for thisBlock in blocks:
+    currentLoop = blocks
+    # abbreviate parameter names if possible (e.g. rgb = thisBlock.rgb)
+    if thisBlock != None:
+        for paramName in thisBlock:
+            exec('{} = thisBlock[paramName]'.format(paramName))
+      
