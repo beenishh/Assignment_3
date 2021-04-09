@@ -111,3 +111,45 @@ instr_done_label = visual.TextStim(win=win, name='instr_done_label',
 instr_done_touch = event.Mouse(win=win)
 x, y = [None, None]
 instr_done_touch.mouseClock = core.Clock()
+
+# Initialize components for Routine "ready"
+readyClock = core.Clock()
+main_ready_msg = visual.TextStim(win=win, name='main_ready_msg',
+    text='Take note of the categories below\n \nPosition your index fingers \n \nPress the space bar (or one of the green buttons) to begin',
+    font='Arial',
+    units='height', pos=[0, 0], height=0.03, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=0.0);
+button_L = visual.Rect(
+    win=win, name='button_L',units='height', 
+    width=(0.4, 0.2)[0], height=(0.4, 0.2)[1],
+    ori=0, pos=(-0.4, -0.3),
+    lineWidth=1, lineColor='darkgreen', lineColorSpace='rgb',
+    fillColor='lightgreen', fillColorSpace='rgb',
+    opacity=1, depth=-1.0, interpolate=True)
+ready_label_L = visual.TextStim(win=win, name='ready_label_L',
+    text='default text',
+    font='Arial',
+    units='height', pos=[-0.4, -0.3], height=0.05, wrapWidth=None, ori=0, 
+    color='darkgreen', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-2.0);
+button_R = visual.Rect(
+    win=win, name='button_R',units='height', 
+    width=(0.4, 0.2)[0], height=(0.4, 0.2)[1],
+    ori=0, pos=(0.4, -0.3),
+    lineWidth=1, lineColor='darkgreen', lineColorSpace='rgb',
+    fillColor='lightgreen', fillColorSpace='rgb',
+    opacity=1, depth=-3.0, interpolate=True)
+ready_label_R = visual.TextStim(win=win, name='ready_label_R',
+    text='default text',
+    font='Arial',
+    units='height', pos=[0.4, -0.3], height=0.05, wrapWidth=None, ori=0, 
+    color='darkgreen', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-4.0);
+ready_done_mouse = event.Mouse(win=win)
+x, y = [None, None]
+ready_done_mouse.mouseClock = core.Clock()
+ready_done = keyboard.Keyboard()
