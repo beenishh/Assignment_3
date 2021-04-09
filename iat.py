@@ -61,3 +61,53 @@ logging.console.setLevel(logging.WARNING)  # this outputs to the screen, not a f
 endExpNow = False  # flag for 'escape' or other condition => quit the exp
 frameTolerance = 0.001  # how close to onset before 'same' frame
 
+# Start Code - component code to be run after the window creation
+
+# Setup the Window
+win = visual.Window(
+    size=[1920, 1080], fullscr=True, screen=0, 
+    winType='pyglet', allowGUI=False, allowStencil=False,
+    monitor='testMonitor', color='black', colorSpace='rgb',
+    blendMode='avg', useFBO=True, 
+    units='height')
+# store frame rate of monitor if we can measure it
+expInfo['frameRate'] = win.getActualFrameRate()
+if expInfo['frameRate'] != None:
+    frameDur = 1.0 / round(expInfo['frameRate'])
+else:
+    frameDur = 1.0 / 60.0  # could not measure, so guess
+  
+  # create a default keyboard (e.g. to check for escape)
+defaultKeyboard = keyboard.Keyboard()
+
+# Initialize components for Routine "instructions"
+instructionsClock = core.Clock()
+if expInfo['order']=='random':
+    expInfo['order'] = randint(1,2)
+    
+blocks_file = "blocks_order"+str(expInfo['order'])+".xlsx"
+instructs_text = visual.TextStim(win=win, name='instructs_text',
+    text='default text',
+    font='Arial',
+    units='height', pos=[0, 0], height=0.03, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-1.0);
+instruct_done = keyboard.Keyboard()
+instr_done_button = visual.Rect(
+    win=win, name='instr_done_button',units='height', 
+    width=(0.4, 0.1)[0], height=(0.4, 0.1)[1],
+    ori=0, pos=(0, -0.4),
+    lineWidth=1, lineColor='darkgreen', lineColorSpace='rgb',
+    fillColor='lightgreen', fillColorSpace='rgb',
+    opacity=1, depth=-3.0, interpolate=True)
+instr_done_label = visual.TextStim(win=win, name='instr_done_label',
+    text='Next...',
+    font='Arial',
+    units='height', pos=(0, -0.4), height=0.05, wrapWidth=None, ori=0, 
+    color='darkgreen', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-4.0);
+instr_done_touch = event.Mouse(win=win)
+x, y = [None, None]
+instr_done_touch.mouseClock = core.Clock()
