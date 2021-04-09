@@ -977,3 +977,24 @@ while continueRoutine:
     # refresh the screen
     if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
         win.flip()
+# -------Ending Routine "end_thanks"-------
+for thisComponent in end_thanksComponents:
+    if hasattr(thisComponent, "setAutoDraw"):
+        thisComponent.setAutoDraw(False)
+thisExp.addData('thanks_text.started', thanks_text.tStartRefresh)
+thisExp.addData('thanks_text.stopped', thanks_text.tStopRefresh)
+# the Routine "end_thanks" was not non-slip safe, so reset the non-slip timer
+routineTimer.reset()
+
+# Flip one final time so any remaining win.callOnFlip() 
+# and win.timeOnFlip() tasks get executed before quitting
+win.flip()
+
+# these shouldn't be strictly necessary (should auto-save)
+thisExp.saveAsWideText(filename+'.csv', delim='auto')
+thisExp.saveAsPickle(filename)
+logging.flush()
+# make sure everything is closed down
+thisExp.abort()  # or data files will save again on exit
+win.close()
+core.quit()
